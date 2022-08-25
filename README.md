@@ -1,0 +1,1 @@
+# laragen-test
