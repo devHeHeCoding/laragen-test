@@ -1,0 +1,39 @@
+.page-header {
+    @apply flex justify-between border-b border-gray-200 pb-3 mb-30;
+    @screen lg {
+        @apply pb-7;
+    }
+
+    .breadcrumb {
+        @apply flex mt-1 overflow-auto pb-2;
+
+        &__item {
+            @apply text-sm flex-none;
+
+            &:first-of-type {
+                @apply text-blue-400 hover:text-indigo-400;
+            }
+
+            &:not(:first-of-type) {
+                a {
+                    @apply text-indigo-400 hover:underline;
+                }
+            }
+
+            &:not(:last-of-type) {
+                &:after {
+                    content: '/';
+                    @apply mx-1;
+                    @screen md {
+                        @apply mx-3;
+                    }
+                }
+            }
+
+            &:last-of-type {
+                @apply text-gray-400;
+            }
+
+        }
+    }
+}

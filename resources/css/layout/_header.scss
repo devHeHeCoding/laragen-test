@@ -1,0 +1,19 @@
+.profile-menu {
+    @apply ml-3 relative;
+
+    &__activator {
+        @apply border border-blue-400 p-2 max-w-xs bg-white flex items-center rounded-full focus;
+    }
+
+    &__dropdown {
+        @apply absolute right-0 mt-2 w-48 rounded shadow py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none;
+
+        &-item {
+            @apply block px-4 py-2 text-sm hover:bg-gray-100;
+
+            &.active {
+                @apply bg-gray-100;
+            }
+        }
+    }
+}

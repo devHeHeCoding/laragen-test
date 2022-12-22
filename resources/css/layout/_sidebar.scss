@@ -1,0 +1,101 @@
+.sidebar {
+    @apply hidden md:flex md:flex-col md:fixed md:inset-y-0 transition-all duration-300;
+
+    &__wrapper {
+        @apply flex-col flex-grow border-r border-gray-300 py-5 bg-white overflow-y-auto;
+
+        &-logo {
+            @apply flex flex-shrink-0;
+        }
+        &-activator {
+            @apply h-6 text-blue-400;
+        }
+
+        &-menu {
+            @apply flex-1 px-5 pb-4 space-y-1;
+
+            &-item {
+                @apply text-blue-400 flex items-center px-8 py-2 text-sm w-full;
+
+                &:hover {
+                    @apply bg-gray-100;
+                }
+                &.active {
+                    @apply bg-gray-100;
+                }
+
+                &-icon {
+                    @apply text-blue-400 h-7 w-7 flex-shrink-0;
+
+                    &-collapse {
+                        @apply ml-auto;
+                    }
+                }
+
+                &-title {
+                    @apply ml-5;
+                }
+            }
+
+            ul {
+                @apply pl-6 py-2;
+
+                .sidebar__wrapper-menu-item-icon {
+                    @apply w-1 h-1;
+                }
+            }
+        }
+    }
+
+    &.opened {
+        @apply md:w-72;
+
+        .sidebar__wrapper {
+            &-logo {
+                @apply pl-12 pr-6;
+            }
+            &-activator {
+                @apply px-6;
+            }
+        }
+    }
+
+    &.closed {
+        @apply md:w-24;
+
+        .sidebar__wrapper {
+            &-logo {
+                @apply px-2 items-center;
+            }
+            &-activator {
+                @apply pl-4;
+            }
+
+            &-menu {
+                @apply px-0;
+
+                &-item {
+                    @apply px-2 justify-center border-l-4 border-r-4 border-gray-100;
+
+                    &.active {
+                        @apply border-l-indigo-400;
+                    }
+
+                    &-title {
+                        @apply hidden;
+                    }
+
+                    &-icon {
+                        &-collapse {
+                            @apply hidden;
+                        }
+                    }
+                }
+
+                ul {
+                    @apply hidden;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+@import "layout/_header.scss";
+@import "layout/_sidebar.scss";
+@import "layout/_main.scss";
+@import "components/_form.scss";
+
+@tailwind base;
+
+@layer base {
+    h1 {
+        font-size: calc(18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)));
+        line-height: calc(24px + (26 - 24) * ((100vw - 300px) / (1600 - 300)));
+        @apply font-bold text-blue-400;
+    }
+    h2 {
+        font-size: calc(16px + (18 - 16) * ((100vw - 300px) / (1600 - 300)));
+        line-height: calc(20px + (22 - 20) * ((100vw - 300px) / (1600 - 300)));
+        @apply font-bold text-blue-400;
+    }
+    p {
+        @apply text-sm;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none !important;
+}
+
+.focus {
+    @apply focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-indigo-400;
+}
+.focus-inset {
+    @apply focus:ring-inset;
+}
