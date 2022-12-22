@@ -30,8 +30,8 @@
                                                             <td>
                                     @includeFirst(
                                         [
-                                            'admin.crud-controller.testcontroller.index.forest_bogan_id',
-                                            'admin.generated.crud-controller.testcontroller.index.forest_bogan_id'
+                                            'admin.crud-controller.testcontroller.index.frankie_terry_id',
+                                            'admin.generated.crud-controller.testcontroller.index.frankie_terry_id'
                                         ],
                                     )
                                 </td>
