@@ -7,11 +7,11 @@ Route::name('laragen')
 
                                     Route::get('test_cars', [App/Http/Controllers/TestController::class, 'index'])->name('test_cars.index');
                             Route::get('test_cars/create', [App/Http/Controllers/TestController::class, 'create'])->name('test_cars/create.create');
-                            Route::get('test_cars/{testcar1703144420}', [App/Http/Controllers/TestController::class, 'show'])->name('test_cars/{testcar1703144420}.show');
-                            Route::get('test_cars/{testcar1703144420}/edit', [App/Http/Controllers/TestController::class, 'edit'])->name('test_cars/{testcar1703144420}/edit.edit');
+                            Route::get('test_cars/{testcar335945380}', [App/Http/Controllers/TestController::class, 'show'])->name('test_cars/{testcar335945380}.show');
+                            Route::get('test_cars/{testcar335945380}/edit', [App/Http/Controllers/TestController::class, 'edit'])->name('test_cars/{testcar335945380}/edit.edit');
                                                 Route::get('test_cars', [App/Http/Controllers/TestController::class, 'index'])->name('test_cars.index');
                             Route::get('test_cars/create', [App/Http/Controllers/TestController::class, 'create'])->name('test_cars/create.create');
-                            Route::get('test_cars/{testcar1703144420}', [App/Http/Controllers/TestController::class, 'show'])->name('test_cars/{testcar1703144420}.show');
-                            Route::get('test_cars/{testcar1703144420}/edit', [App/Http/Controllers/TestController::class, 'edit'])->name('test_cars/{testcar1703144420}/edit.edit');
+                            Route::get('test_cars/{testcar335945380}', [App/Http/Controllers/TestController::class, 'show'])->name('test_cars/{testcar335945380}.show');
+                            Route::get('test_cars/{testcar335945380}/edit', [App/Http/Controllers/TestController::class, 'edit'])->name('test_cars/{testcar335945380}/edit.edit');
                     
     });
