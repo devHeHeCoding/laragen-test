@@ -24,15 +24,15 @@
                                         [
                                             'admin.crud-controller.testcontroller.index.test',
                                             'admin.generated.crud-controller.testcontroller.index.test'
-                                        ],
+                                        ]
                                     )
                                 </td>
                                                             <td>
                                     @includeFirst(
                                         [
-                                            'admin.crud-controller.testcontroller.index.frankie_terry_id',
-                                            'admin.generated.crud-controller.testcontroller.index.frankie_terry_id'
-                                        ],
+                                            'admin.crud-controller.testcontroller.index.newell_quitzon_i_v_id',
+                                            'admin.generated.crud-controller.testcontroller.index.newell_quitzon_i_v_id'
+                                        ]
                                     )
                                 </td>
                                                     </tr>
