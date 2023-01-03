@@ -195,7 +195,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-    \tApp\Providers\LaragenServiceProvider::class,\n\n],
+    ],
 
     /*
     |--------------------------------------------------------------------------
