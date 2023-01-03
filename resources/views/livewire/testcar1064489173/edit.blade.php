@@ -8,8 +8,8 @@
                 )
                             @includeFirst(
                     [
-                        'admin.crud-controller.testcontroller.edit.avery_olson_ph_d_id',
-                        'admin.generated.crud-controller.testcontroller.edit.avery_olson_ph_d_id'
+                        'admin.crud-controller.testcontroller.edit.annabell_lemke_id',
+                        'admin.generated.crud-controller.testcontroller.edit.annabell_lemke_id'
                     ]
                 )
                     </fieldset>
@@ -18,7 +18,7 @@
         <button class="btn btn-indigo mr-2" type="submit">
             {{ trans('global.save') }}
         </button>
-        <a href="{{ route('admin.testcar191098059.index') }}" class="btn btn-secondary">
+        <a href="{{ route('admin.testcar1064489173.index') }}" class="btn btn-secondary">
             {{ trans('global.cancel') }}
         </a>
     </div>
