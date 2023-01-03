@@ -1,1 +1,0 @@
-{{ $item->has_many_relation. }}
