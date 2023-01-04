@@ -1,12 +1,12 @@
 <div class="form-group">
     <label for="1">
-        marilou_greenfelder_id
+        augustine_greenfelder_id
         <input type="text"
                id="1"
-               name="testcar614311431.marilou_greenfelder_id"
+               name="testcar552468308.augustine_greenfelder_id"
                class="form-control"
-               placeholder="marilou_greenfelder_id"
-               wire:model.defer="testcar614311431.marilou_greenfelder_id"
+               placeholder="augustine_greenfelder_id"
+               wire:model.defer="testcar552468308.augustine_greenfelder_id"
         >
         <span class="error-message">
             errorMessage
