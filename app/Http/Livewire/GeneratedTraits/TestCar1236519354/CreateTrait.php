@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Livewire\GeneratedTraits\TestCar1549481132;
+namespace App\Http\Livewire\GeneratedTraits\TestCar1236519354;
 
-use App\Models\TestCar1549481132;
-                use App\Models\TestCar21347936844;
+use App\Models\TestCar1236519354;
+                use App\Models\TestCar2519464470;
     use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar1549481132 $testCar1549481132;
+    public TestCar1236519354 $testCar1236519354;
 
                                             
     public function mount()
@@ -19,20 +19,20 @@ trait CreateTrait
     {
         $this->validate();
 
-        $this->testCar1549481132->save();
+        $this->testCar1236519354->save();
 
-        return redirect()->route('admin.testCar1549481132.index');
+        return redirect()->route('admin.testCar1236519354.index');
     }
 
     public function validation(): array
     {
         return [
-                                                'testCar1549481132.test' => [
+                                                'testCar1236519354.test' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
                                                                             ],
-                                                'testCar1549481132.ms._glenda_moore_i_i_id' => [
+                                                'testCar1236519354.sandrine_balistreri_m_d_id' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
