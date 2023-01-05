@@ -1,36 +1,36 @@
 <?php
 
-namespace App\Http\Livewire\GeneratedTraits\TestCar425762237;
+namespace App\Http\Livewire\GeneratedTraits\TestCar1689475383;
 
-use App\Models\TestCar425762237;
-                use App\Models\TestCar250487792;
+use App\Models\TestCar1689475383;
+                use App\Models\TestCar22038701134;
     use Illuminate\Database\Eloquent\Collection;
 
 trait EditTrait
 {
                                             
-    public TestCar425762237 $testCar425762237;
+    public TestCar1689475383 $testCar1689475383;
 
-    public function mount(TestCar425762237 $testCar425762237)
+    public function mount(TestCar1689475383 $testCar1689475383)
     {
-        $this->testCar425762237 = $testCar425762237;
+        $this->testCar1689475383 = $testCar1689475383;
                                                                             }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar425762237->save();
+        $this->testCar1689475383->save();
 
-        return redirect()->route('admin.testCar425762237.index');
+        return redirect()->route('admin.testCar1689475383.index');
     }
 
     public function validation(): array
     {
         return [
-                                                'testCar425762237.test' => [
+                                                'testCar1689475383.test' => [
                                                                                                                 ],
-                                                'testCar425762237.lisette_zulauf_id' => [
+                                                'testCar1689475383.mariano_wyman_d_v_m_id' => [
                                                                                                                 ],
                     ];
     }
