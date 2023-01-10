@@ -11,7 +11,6 @@ use Illuminate\Validation\ValidationException;
 
 class PasswordResetRequest extends FormRequest
 {
-s
     /**
      * Get the validation rules that apply to the request.
      *

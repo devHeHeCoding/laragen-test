@@ -7,31 +7,54 @@
             <!-- Password Reset Token -->
             <input type="hidden" name="token" value="{{ $request->route('token') }}">
 
-            <!-- Email Address -->
-            <x-form.form-input
+            <x-laragen::input.group
                 label="Email"
-                placeholder="john.doe@email.com"
-                name="email"
-                type="email"
-                value="{{old('email')}}"
-            />
+                for="email"
+                required
+                :errors="$errors->get('email')"
+            >
 
-            <!-- Password -->
-            <x-form.form-input
+                <x-laragen::input.text
+                    type="email"
+                    required
+                    autofocus
+                    :value="old('email')"
+                    name="email"
+                    placeholder="Email"
+                />
+
+            </x-laragen::input.group>
+
+            <x-laragen::input.group
                 label="Password"
-                placeholder="Password"
-                name="password"
-                type="password"
-            />
+                required
+                for="password"
+                :errors="$errors->get('email')"
+            >
 
-            <!-- Confirm Password -->
-            <x-form.form-input
+                <x-laragen::input.text
+                    placeholder="Password"
+                    name="password"
+                    type="password"
+                />
+
+            </x-laragen::input.group>
+
+            <x-laragen::input.group
                 label="Confirm Password"
-                placeholder="Confirm Password"
-                name="password_confirmation"
-                type="password"
-            />
+                required
+                for="password_confirmation"
+                :errors="$errors->get('email')"
+            >
 
+                <x-laragen::input.text
+                    placeholder="Confirm Password"
+                    name="password_confirmation"
+                    type="password"
+                />
+
+            </x-laragen::input.group>
+            
             <div class="flex items-center justify-end mt-4">
                 <x-primary-button>
                     {{ __('Reset Password') }}

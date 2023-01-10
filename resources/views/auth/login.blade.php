@@ -6,22 +6,36 @@
         <form method="POST" action="{{ route('login.store') }}" novalidate>
             @csrf
 
-            <!-- Email Address -->
-            <x-form.form-input
+            <x-laragen::input.group
                 label="Email"
-                placeholder="john.doe@email.com"
-                name="email"
-                type="email"
-                value="{{old('email')}}"
-            />
+                for="email"
+                required
+                :errors="$errors->get('email')"
+            >
 
-            <!-- Password -->
-            <x-form.form-input
+                <x-laragen::input.text
+                    placeholder="john.doe@email.com"
+                    name="email"
+                    type="email"
+                    value="{{old('email')}}"
+                />
+
+            </x-laragen::input.group>
+
+            <x-laragen::input.group
                 label="Password"
-                placeholder="Password"
-                name="password"
-                type="password"
-            />
+                required
+                for="password"
+                :errors="$errors->get('email')"
+            >
+
+                <x-laragen::input.text
+                    placeholder="Password"
+                    name="password"
+                    type="password"
+                />
+
+            </x-laragen::input.group>
 
 
             <!-- Remember Me -->

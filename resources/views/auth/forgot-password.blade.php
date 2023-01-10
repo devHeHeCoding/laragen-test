@@ -10,8 +10,14 @@
             @csrf
 
             <!-- Email Address -->
-            <div>
-                <x-form.form-input
+            <x-laragen::input.group
+                label="Email"
+                for="email"
+                required
+                :errors="$errors->get('email')"
+            >
+
+                <x-laragen::input.text
                     type="email"
                     required
                     autofocus
@@ -19,7 +25,9 @@
                     name="email"
                     placeholder="Email"
                 />
-            </div>
+
+            </x-laragen::input.group>
+
 
             <div class="flex items-center justify-end mt-4">
 
