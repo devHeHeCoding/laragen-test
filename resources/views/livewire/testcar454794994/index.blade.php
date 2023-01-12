@@ -3,7 +3,7 @@
         Loading...
     </div>
 
-    <div class="overflow-x-auto">
+    <div class="overflow-hidden">
         <div class="overflow-x-auto">
             <table class="table table-index w-full">
                 <thead>
@@ -11,7 +11,9 @@
                                                     <th class="w-28">
                                 {{ trans('cruds.application.fields.test') }}
                             </th>
-                                                                            <th class="w-28"> {{ trans('global.actions) }}</th>
+                                                    <th class="w-28">
+                                {{ trans('cruds.application.fields.has_many_relation') }}
+                            </th>
                                             </tr>
                 </thead>
                 <tbody>
@@ -25,12 +27,13 @@
                                         ]
                                     )
                                 </td>
-                                                                                        <td>
-                                    <div class="form-group">
-                                        <button class="btn btn-danger mr-2" type="submit" wire:click="delete({{ $item->id }})">
-                                            {{ trans('global.delete) }}
-                                        </button>
-                                    </div>
+                                                            <td>
+                                    @includeFirst(
+                                        [
+                                            'admin.crud-controller.testcontroller.index.adelle_kozey_id',
+                                            'admin.generated.crud-controller.testcontroller.index.adelle_kozey_id'
+                                        ]
+                                    )
                                 </td>
                                                     </tr>
                     @empty
