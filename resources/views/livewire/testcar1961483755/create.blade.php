@@ -2,16 +2,16 @@
                                         <fieldset>
                             @includeFirst(
                     [
-                        'admin.crud-controller.testcontroller.create.test',
-                        'admin.generated.crud-controller.testcontroller.create.test'
+                        'admin.crud-controller.TestController.create.test',
+                        'admin.generated.crud-controller.TestController.create.test'
                     ]
                 )
                     </fieldset>
                     <fieldset>
                             @includeFirst(
                     [
-                        'admin.crud-controller.testcontroller.create.lucinda_reynolds_id',
-                        'admin.generated.crud-controller.testcontroller.create.lucinda_reynolds_id'
+                        'admin.crud-controller.TestController.create.dorthy_pagac_id',
+                        'admin.generated.crud-controller.TestController.create.dorthy_pagac_id'
                     ]
                 )
                     </fieldset>
