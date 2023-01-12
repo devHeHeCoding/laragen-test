@@ -1,38 +1,39 @@
 <?php
 
-namespace App\Http\Livewire\GeneratedTraits\TestCar1914410034;
+namespace App\Http\Livewire\GeneratedTraits\TestCar696121985;
 
-use App\Models\TestCar1914410034;
-                use App\Models\TestCar21668703268;
+use App\Models\TestCar696121985;
+                use App\Models\TestCar2537177740;
     use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar1914410034 $testCar1914410034;
+    public TestCar696121985 $testCar696121985;
 
                                             
-    public function mount()
+    public function mount(TestCar696121985 $testCar696121985)
     {
+        $this->testCar696121985 = $testCar696121985;
                                                                             }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar1914410034->save();
+        $this->testCar696121985->save();
 
-        return redirect()->route('admin.testCar1914410034.index');
+        return redirect()->route('laragentestCar696121985.index');
     }
 
-    public function validation(): array
+    public function rules(): array
     {
         return [
-                                                'testCar1914410034.test' => [
+                                                'testCar696121985.test' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
                                                                             ],
-                                                'testCar1914410034.marlee_hettinger_id' => [
+                                                'testCar696121985.antwon_west_i_i_id' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',

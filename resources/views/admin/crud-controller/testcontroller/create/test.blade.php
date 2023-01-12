@@ -3,10 +3,10 @@
         test
         <input type="text"
                id="7"
-               name="testcar1914410034.test"
+               name="testcar696121985.test"
                class="form-control"
                placeholder="test"
-               wire:model.defer="testcar1914410034.test"
+               wire:model.defer="testcar696121985.test"
         >
         <span class="error-message">
             errorMessage
