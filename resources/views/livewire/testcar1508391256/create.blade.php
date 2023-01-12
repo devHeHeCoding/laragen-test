@@ -10,8 +10,8 @@
                     <fieldset>
                             @includeFirst(
                     [
-                        'admin.crud-controller.testcontroller.create.dr._murphy_dickens_m_d_id',
-                        'admin.generated.crud-controller.testcontroller.create.dr._murphy_dickens_m_d_id'
+                        'admin.crud-controller.testcontroller.create.rae_kovacek_m_d_id',
+                        'admin.generated.crud-controller.testcontroller.create.rae_kovacek_m_d_id'
                     ]
                 )
                     </fieldset>
