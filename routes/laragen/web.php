@@ -7,11 +7,11 @@ Route::name('laragen')
 
                                     Route::get('test_cars', [\App\Http\Controllers\TestController::class, 'index'])->name('test_cars.index');
                             Route::get('test_cars/create', [\App\Http\Controllers\TestController::class, 'create'])->name('test_cars/create.create');
-                            Route::get('test_cars/{testcar2078232593}', [\App\Http\Controllers\TestController::class, 'show'])->name('test_cars/{testcar2078232593}.show');
-                            Route::get('test_cars/{testcar2078232593}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('test_cars/{testcar2078232593}/edit.edit');
+                            Route::get('test_cars/{testcar2081218688}', [\App\Http\Controllers\TestController::class, 'show'])->name('test_cars/{testcar2081218688}.show');
+                            Route::get('test_cars/{testcar2081218688}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('test_cars/{testcar2081218688}/edit.edit');
                                                 Route::get('test_cars', [\App\Http\Controllers\TestController::class, 'index'])->name('test_cars.index');
                             Route::get('test_cars/create', [\App\Http\Controllers\TestController::class, 'create'])->name('test_cars/create.create');
-                            Route::get('test_cars/{testcar2078232593}', [\App\Http\Controllers\TestController::class, 'show'])->name('test_cars/{testcar2078232593}.show');
-                            Route::get('test_cars/{testcar2078232593}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('test_cars/{testcar2078232593}/edit.edit');
+                            Route::get('test_cars/{testcar2081218688}', [\App\Http\Controllers\TestController::class, 'show'])->name('test_cars/{testcar2081218688}.show');
+                            Route::get('test_cars/{testcar2081218688}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('test_cars/{testcar2081218688}/edit.edit');
                     
     });

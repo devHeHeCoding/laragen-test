@@ -6,21 +6,21 @@ trait TestControllerTrait
 {
     public function index()
     {
-        return view('admin.testcar2078232593.index');
+        return view('admin.testcar2081218688.index');
     }
 
     public function create()
     {
-        return view('admin.testcar2078232593.create');
+        return view('admin.testcar2081218688.create');
     }
 
-    public function edit(TestCar2078232593 $testcar2078232593)
+    public function edit(TestCar2081218688 $testcar2081218688)
     {
-        return view('admin.testcar2078232593.edit', compact('testcar2078232593'));
+        return view('admin.testcar2081218688.edit', compact('testcar2081218688'));
     }
 
-    public function show(TestCar2078232593 $testcar2078232593)
+    public function show(TestCar2081218688 $testcar2081218688)
     {
-        return view('admin.testcar2078232593.show', compact('testcar2078232593'));
+        return view('admin.testcar2081218688.show', compact('testcar2081218688'));
     }
 }
