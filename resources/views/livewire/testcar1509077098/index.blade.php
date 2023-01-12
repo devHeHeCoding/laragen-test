@@ -11,9 +11,6 @@
                                                     <th class="w-28">
                                 {{ trans('cruds.application.fields.test') }}
                             </th>
-                                                    <th class="w-28">
-                                {{ trans('cruds.application.fields.has_many_relation') }}
-                            </th>
                                             </tr>
                 </thead>
                 <tbody>
@@ -24,14 +21,6 @@
                                         [
                                             'admin.crud-controller.testcontroller.index.test',
                                             'admin.generated.crud-controller.testcontroller.index.test'
-                                        ]
-                                    )
-                                </td>
-                                                            <td>
-                                    @includeFirst(
-                                        [
-                                            'admin.crud-controller.testcontroller.index.adelle_kozey_id',
-                                            'admin.generated.crud-controller.testcontroller.index.adelle_kozey_id'
                                         ]
                                     )
                                 </td>
