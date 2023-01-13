@@ -11,7 +11,7 @@
                                                     <th class="w-28">
                                 {{ trans('cruds.application.fields.test') }}
                             </th>
-                                                <th class="w-28"> {{ trans('global.actions) }}</th>
+                                                <th class="w-28"> {{ trans('global.actions') }}</th>
                     </tr>
                 </thead>
                 <tbody>
