@@ -11,8 +11,8 @@
                                                     <th class="w-28">
                                 {{ trans('cruds.application.fields.test') }}
                             </th>
-                                                                            <th class="w-28"> {{ trans('global.actions) }}</th>
-                                            </tr>
+                                                <th class="w-28"> {{ trans('global.actions) }}</th>
+                    </tr>
                 </thead>
                 <tbody>
                     @forelse($items as $item)
@@ -25,14 +25,20 @@
                                         ]
                                     )
                                 </td>
-                                                                                        <td>
-                                    <div class="form-group">
-                                        <button class="btn btn-danger mr-2" type="submit" wire:click="delete({{ $item->id }})">
-                                            {{ trans('global.delete) }}
+                                                        <td>
+                                <div class="form-group">
+                                                                                                                <a href="{{ route('laragentest_cars.show', ['test_cars' => $item->id])}}" class="btn btn-secondary">
+                                            {{ trans('global.show') }}
+                                        </a>
+                                                                                                                <a href="{{ route('laragentest_cars.edit', ['test_cars' => $item->id])}}" class="btn btn-secondary">
+                                            {{ trans('global.edit') }}
+                                        </a>
+                                                                                                                <button class="btn btn-danger mr-2" type="submit" wire:click="delete({{ $item->id }})">
+                                            {{ trans('global.delete') }}
                                         </button>
-                                    </div>
-                                </td>
-                                                    </tr>
+                                                                    </div>
+                            </td>
+                        </tr>
                     @empty
                         <tr>
                             <td colspan="10">No entries found.</td>
