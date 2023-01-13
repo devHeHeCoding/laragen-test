@@ -3,17 +3,15 @@
         Loading...
     </div>
 
-    <div class="overflow-hidden">
+    <div class="overflow-x-auto">
         <div class="overflow-x-auto">
             <table class="table table-index w-full">
                 <thead>
                     <tr>
                                                     <th class="w-28">
-                                {{ trans('cruds.application.fields.{{ $crudControllerView->linkedModelIsRelation() ? $crudControllerView->linkedModel->name : $crudControllerView->linkedModel->column_name }}') }}
+                                {{ trans('cruds.application.fields.test') }}
                             </th>
-                                                    <th class="w-28">
-                                {{ trans('cruds.application.fields.{{ $crudControllerView->linkedModelIsRelation() ? $crudControllerView->linkedModel->name : $crudControllerView->linkedModel->column_name }}') }}
-                            </th>
+                                                                            <th class="w-28"> {{ trans('global.actions) }}</th>
                                             </tr>
                 </thead>
                 <tbody>
@@ -27,13 +25,12 @@
                                         ]
                                     )
                                 </td>
-                                                            <td>
-                                    @includeFirst(
-                                        [
-                                            'admin.crud-controller.testcontroller.index.francisca_lehner_id',
-                                            'admin.generated.crud-controller.testcontroller.index.francisca_lehner_id'
-                                        ]
-                                    )
+                                                                                        <td>
+                                    <div class="form-group">
+                                        <button class="btn btn-danger mr-2" type="submit" wire:click="delete({{ $item->id }})">
+                                            {{ trans('global.delete) }}
+                                        </button>
+                                    </div>
                                 </td>
                                                     </tr>
                     @empty

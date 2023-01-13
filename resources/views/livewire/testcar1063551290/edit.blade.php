@@ -6,19 +6,13 @@
                         'admin.generated.crud-controller.testcontroller.edit.test'
                     ]
                 )
-                            @includeFirst(
-                    [
-                        'admin.crud-controller.testcontroller.edit.francisca_lehner_id',
-                        'admin.generated.crud-controller.testcontroller.edit.francisca_lehner_id'
-                    ]
-                )
                     </fieldset>
                                             
     <div class="form-group">
         <button class="btn btn-indigo mr-2" type="submit">
             {{ trans('global.save') }}
         </button>
-        <a href="{{ route('admin.{{ strtolower($crudController->model->class_name) }}.index') }}" class="btn btn-secondary">
+        <a href="{{ route('laragentest_cars.index') }}" class="btn btn-secondary">
             {{ trans('global.cancel') }}
         </a>
     </div>
