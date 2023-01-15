@@ -7,11 +7,11 @@ Route::name('laragen')
 
                                     Route::get('test_cars', [\App\Http\Controllers\TestController::class, 'index'])->name('test_cars.index');
                             Route::get('test_cars/create', [\App\Http\Controllers\TestController::class, 'create'])->name('test_cars/create.create');
-                            Route::get('test_cars/{testcar138541982}', [\App\Http\Controllers\TestController::class, 'show'])->name('test_cars/{testcar138541982}.show');
-                            Route::get('test_cars/{testcar138541982}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('test_cars/{testcar138541982}/edit.edit');
+                            Route::get('test_cars/{testcar1076792425}', [\App\Http\Controllers\TestController::class, 'show'])->name('test_cars/{testcar1076792425}.show');
+                            Route::get('test_cars/{testcar1076792425}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('test_cars/{testcar1076792425}/edit.edit');
                                                 Route::get('test_cars', [\App\Http\Controllers\TestController::class, 'index'])->name('test_cars.index');
                             Route::get('test_cars/create', [\App\Http\Controllers\TestController::class, 'create'])->name('test_cars/create.create');
-                            Route::get('test_cars/{testcar138541982}', [\App\Http\Controllers\TestController::class, 'show'])->name('test_cars/{testcar138541982}.show');
-                            Route::get('test_cars/{testcar138541982}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('test_cars/{testcar138541982}/edit.edit');
+                            Route::get('test_cars/{testcar1076792425}', [\App\Http\Controllers\TestController::class, 'show'])->name('test_cars/{testcar1076792425}.show');
+                            Route::get('test_cars/{testcar1076792425}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('test_cars/{testcar1076792425}/edit.edit');
                     
     });
