@@ -12,7 +12,7 @@
         <button class="btn btn-indigo mr-2" type="submit">
             {{ trans('global.save') }}
         </button>
-        <a href="{{ route('laragentest_cars.index') }}" class="btn btn-secondary">
+        <a href="{{ route('laragen{{ strtolower($crudController->model->table_name) }}.index') }}" class="btn btn-secondary">
             {{ trans('global.cancel') }}
         </a>
     </div>
