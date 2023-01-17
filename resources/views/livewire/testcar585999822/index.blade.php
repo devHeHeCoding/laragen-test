@@ -27,11 +27,11 @@
                                                         <td>
                                 <div class="form-group">
                                     
-                                                                            <a href="{{ route('laragen{{$modelName}}.show', ['testcar607009969' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen{{$modelName}}.show', ['testcar585999822' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.show') }}
                                         </a>
                                     
-                                                                            <a href="{{ route('laragen.{{$modelName}}.edit', ['testcar607009969' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen.{{$modelName}}.edit', ['testcar585999822' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.edit') }}
                                         </a>
                                     
