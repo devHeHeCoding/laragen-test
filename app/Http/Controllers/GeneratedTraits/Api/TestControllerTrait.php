@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers\GeneratedTraits\Api;
 
 trait TestControllerTrait
