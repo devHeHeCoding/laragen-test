@@ -9,7 +9,8 @@
                 <thead>
                     <tr>
                                                     <th class="w-28">
-                                                            </th>
+                                {{ trans('cruds.application.fields.{{ $crudControllerView->linkedModelIsRelation() ? $crudControllerView->linkedModel->name : $crudControllerView->linkedModel->column_name }}') }}
+                            </th>
                                                 <th class="w-28"> {{ trans('global.actions') }}</th>
                     </tr>
                 </thead>
@@ -26,16 +27,13 @@
                                 </td>
                                                         <td>
                                 <div class="form-group">
-                                    
-                                                                            <a href="{{ route('laragen{{$modelName}}.show', ['testcar28334949' => $item->id]) }}" class="btn btn-secondary">
+                                                                                                                <a href="{{ route('laragentest_cars.show', ['testcar611654621' => $item->id])}}" class="btn btn-secondary">
                                             {{ trans('global.show') }}
                                         </a>
-                                    
-                                                                            <a href="{{ route('laragen.{{$modelName}}.edit', ['testcar28334949' => $item->id]) }}" class="btn btn-secondary">
+                                                                                                                <a href="{{ route('laragen.test_cars.edit', ['testcar611654621' => $item->id])}}" class="btn btn-secondary">
                                             {{ trans('global.edit') }}
                                         </a>
-                                    
-                                                                            <button class="btn btn-danger mr-2" type="submit" wire:click="delete({{ $item->id }})">
+                                                                                                                <button class="btn btn-danger mr-2" type="submit" wire:click="delete({{ $item->id }})">
                                             {{ trans('global.delete') }}
                                         </button>
                                                                     </div>
