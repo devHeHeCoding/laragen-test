@@ -1,40 +1,40 @@
 <?php
 
-namespace App\Http\Livewire\GeneratedTraits\TestCar1693477620;
+namespace App\Http\Livewire\GeneratedTraits\TestCar1424310117;
 
-use App\Models\TestCar1693477620;
-                use App\Models\TestCar21473998494;
+use App\Models\TestCar1424310117;
+                use App\Models\TestCar21579245629;
     use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar1693477620 $testCar1693477620;
+    public TestCar1424310117 $testCar1424310117;
 
-                                    public Collection $testCar21473998494s;
+                                    public Collection $testCar21579245629s;
             
-    public function mount(TestCar1693477620 $testCar1693477620)
+    public function mount(TestCar1424310117 $testCar1424310117)
     {
-        $this->testCar1693477620 = $testCar1693477620;
+        $this->testCar1424310117 = $testCar1424310117;
                                                                             }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar1693477620->save();
+        $this->testCar1424310117->save();
 
-        return redirect()->route('laragentestCar1693477620s.index');
+        return redirect()->route('laragentestCar1424310117s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                'testCar1693477620.test' => [
+                                                'testCar1424310117.test' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
                                                                             ],
-                                                'testCar1693477620.armando_collier_id' => [
+                                                'testCar1424310117.remington_bailey_i_id' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
