@@ -10,18 +10,16 @@
                     <fieldset>
                             @includeFirst(
                     [
-                        'admin.crud-controller.testcontroller.create.dr._murl_hayes_i_v_id',
-                        'admin.generated.crud-controller.testcontroller.create.dr._murl_hayes_i_v_id'
+                        'admin.crud-controller.testcontroller.create.tremayne_aufderhar_id',
+                        'admin.generated.crud-controller.testcontroller.create.tremayne_aufderhar_id'
                     ]
                 )
                     </fieldset>
     
     <div class="form-group">
         <button class="btn btn-indigo mr-2" type="submit">
-            {{ trans('global.save') }}
-        </button>
+            {{ trans('global.save') }}        </button>
         <a href="{{ route('laragen{{ strtolower($crudController->model->table_name) }}.index') }}" class="btn btn-secondary">
-            {{ trans('global.cancel') }}
-        </a>
+            {{ trans('global.cancel') }}        </a>
     </div>
 </form>
