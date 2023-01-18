@@ -1,17 +1,17 @@
 <?php
 
-
-Route::name('laragen')
+Route::name('laragen.')
     ->prefix('laragen')
-    ->group(function (){
+    ->middleware('web')
+    ->group(function () {
 
-                                    Route::get('test_cars', [\App\Http\Controllers\TestController::class, 'index'])->name('test_cars.index');
-                            Route::get('test_cars/create', [\App\Http\Controllers\TestController::class, 'create'])->name('test_cars/create.create');
-                            Route::get('test_cars/{testcar749866031}', [\App\Http\Controllers\TestController::class, 'show'])->name('test_cars/{testcar749866031}.show');
-                            Route::get('test_cars/{testcar749866031}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('test_cars/{testcar749866031}/edit.edit');
-                                                Route::get('test_cars', [\App\Http\Controllers\TestController::class, 'index'])->name('test_cars.index');
-                            Route::get('test_cars/create', [\App\Http\Controllers\TestController::class, 'create'])->name('test_cars/create.create');
-                            Route::get('test_cars/{testcar749866031}', [\App\Http\Controllers\TestController::class, 'show'])->name('test_cars/{testcar749866031}.show');
-                            Route::get('test_cars/{testcar749866031}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('test_cars/{testcar749866031}/edit.edit');
+                                    Route::get('test_cars', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.test_cars.index');
+                            Route::get('test_cars/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.test_cars.create');
+                            Route::get('test_cars/{testcar668198714}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.test_cars.show');
+                            Route::get('test_cars/{testcar668198714}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.test_cars.edit');
+                                                Route::get('test_cars', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.test_cars.index');
+                            Route::get('test_cars/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.test_cars.create');
+                            Route::get('test_cars/{testcar668198714}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.test_cars.show');
+                            Route::get('test_cars/{testcar668198714}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.test_cars.edit');
                     
     });
