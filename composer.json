@@ -2,27 +2,30 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
         "hehecoding/laragen-ui-kit": "^1.0",
-        "laravel/framework": "^9.19",
-        "laravel/sanctum": "^3.0",
+        "laravel/framework": "^9.48",
+        "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.7",
-        "livewire/livewire": "^2.10"
+        "livewire/livewire": "^2.11"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "2.12.2",
         "fakerphp/faker": "^1.9.1",
         "laravel/breeze": "^1.15",
-        "laravel/pint": "^1.0",
-        "laravel/sail": "^1.0.1",
+        "laravel/pint": "^1.1",
+        "laravel/sail": "^1.15",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^6.1",
+        "nunomaduro/collision": "^6.3",
         "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-ignition": "^1.0"
+        "spatie/laravel-ignition": "^1.4"
     },
     "autoload": {
         "psr-4": {
