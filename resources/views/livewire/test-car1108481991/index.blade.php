@@ -27,11 +27,11 @@
                                                         <td>
                                 <div class="form-group">
                                     
-                                                                            <a href="{{ route('laragen.admin.test_cars.show', ['testcar1217718184' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen.admin.test_cars.show', ['testcar1108481991' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.show') }}
                                         </a>
                                     
-                                                                            <a href="{{ route('laragen.admin.test_cars.edit', ['testcar1217718184' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen.admin.test_cars.edit', ['testcar1108481991' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.edit') }}
                                         </a>
                                     
@@ -51,3 +51,11 @@
         </div>
     </div>
 </div>
+
+    @push('scripts')
+        <script>
+            Livewire.on('deleteNotAllowed', e => {
+                alert('Delete not allowed, check related rows.');
+            })
+        </script>
+    @endpush
