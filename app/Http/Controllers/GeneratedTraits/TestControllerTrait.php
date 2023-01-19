@@ -1,27 +1,27 @@
 <?php
 namespace App\Http\Controllers\GeneratedTraits;
 
-use App\Models\TestCar392025487;
+use App\Models\TestCar1009826546;
 
 trait TestControllerTrait
 {
     public function index()
     {
-        return view('admin.testcar392025487.index');
+        return view('admin.testcar1009826546.index');
     }
 
     public function create()
     {
-        return view('admin.testcar392025487.create');
+        return view('admin.testcar1009826546.create');
     }
 
-    public function edit(TestCar392025487 $testcar392025487)
+    public function edit(TestCar1009826546 $testcar1009826546)
     {
-        return view('admin.testcar392025487.edit', compact('testcar392025487'));
+        return view('admin.testcar1009826546.edit', compact('testcar1009826546'));
     }
 
-    public function show(TestCar392025487 $testcar392025487)
+    public function show(TestCar1009826546 $testcar1009826546)
     {
-        return view('admin.testcar392025487.show', compact('testcar392025487'));
+        return view('admin.testcar1009826546.show', compact('testcar1009826546'));
     }
 }
