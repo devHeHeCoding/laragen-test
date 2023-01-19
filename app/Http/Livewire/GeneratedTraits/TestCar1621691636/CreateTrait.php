@@ -1,38 +1,39 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar1687918190;
+namespace App\Http\Livewire\GeneratedTraits\TestCar1621691636;
 
-use App\Models\TestCar1687918190;
-                use App\Models\TestCar21395081977;
+use App\Models\TestCar1621691636;
+                use App\Models\TestCar2503743185;
     use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar1687918190 $testCar1687918190;
+    public TestCar1621691636 $testCar1621691636;
 
-                                            
-    public function mount(TestCar1687918190 $testCar1687918190)
+                                    public Collection $testCar2503743185s;
+            
+    public function mount(TestCar1621691636 $testCar1621691636)
     {
-        $this->testCar1687918190 = $testCar1687918190;
-                                                    }
+        $this->testCar1621691636 = $testCar1621691636;
+                                                                            }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar1687918190->save();
+        $this->testCar1621691636->save();
 
-        return redirect()->route('laragen.admin.test_car1687918190s.index');
+        return redirect()->route('laragen.admin.test_car1621691636s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                'testCar1687918190.test' => [
+                                                'testCar1621691636.test' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
                                                                             ],
-                                                'testCar1687918190.dr._woodrow_johnson_id' => [
+                                                'testCar1621691636.dereck_hansen_id' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
