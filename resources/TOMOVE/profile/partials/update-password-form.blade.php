@@ -32,7 +32,7 @@
         </div>
 
         <div class="flex items-center gap-4">
-            <x-primary-button>{{ __('Save') }}</x-primary-button>
+            <x-laragen::button>{{ __('Save') }}</x-laragen::button>
 
             @if (session('status') === 'password-updated')
                 <p

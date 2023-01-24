@@ -20,4 +20,6 @@
    - ``./vendor/bin/sail artisan key:generate``
    - ``./vendor/bin/sail artisan migrate``
    - ``./vendor/bin/sail artisan storage:link``
-8. Enjoy!
+8. Run ``./vendor/bin/sail npm install`` to install node packages 
+9. Run ``./vendor/bin/sail npm run dev`` to compile development assets.
+10. Enjoy developing!

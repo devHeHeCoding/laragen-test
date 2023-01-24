@@ -6,8 +6,7 @@
 
         <x-auth.inline-status-notification/>
 
-        <form method="POST" action="{{ route('password.email') }}" novalidate>
-            @csrf
+        <x-laragen::form action="{{ route('password.email') }}">
 
             <!-- Email Address -->
             <x-laragen::input.group
@@ -35,10 +34,10 @@
                     {{ __('Login') }}
                 </a>
 
-                <x-primary-button>
+                <x-laragen::button>
                     {{ __('Email Password Reset Link') }}
-                </x-primary-button>
+                </x-laragen::button>
             </div>
-        </form>
+        </x-laragen::form>
     </x-auth.card>
 </x-layouts.guest>

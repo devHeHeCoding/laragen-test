@@ -27,9 +27,9 @@
             </div>
 
             <div class="flex justify-end mt-4">
-                <x-primary-button>
+                <x-laragen::button>
                     {{ __('Confirm') }}
-                </x-primary-button>
+                </x-laragen::button>
             </div>
         </form>
     </x-auth-card>

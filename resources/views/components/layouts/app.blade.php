@@ -20,18 +20,7 @@
         <main class="flex-1 p-7">
             <div class="page-header">
                 <div class="page-header__title">
-                    <h1>Title</h1>
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb__item">
-                            <a href="#"><i class="fa-solid fa-house breadcrumb__item-icon"></i> </a>
-                        </li>
-                        <li class="breadcrumb__item">
-                            <a href="#">Producători</a>
-                        </li>
-                        <li class="breadcrumb__item">
-                            <span>Adaugă Producător</span>
-                        </li>
-                    </ul>
+                    {{ $title ?? '' }}
                 </div>
                 <div class="page-header__actions">
                     {{ $headerActions ?? '' }}
@@ -44,7 +33,10 @@
         </main>
     </div>
 </div>
+
 @livewireScripts
-    @stack('scripts')
+
+@stack('scripts')
+
 </body>
 </html>

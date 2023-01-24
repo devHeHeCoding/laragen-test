@@ -3,8 +3,7 @@
 
         <x-auth.inline-status-notification/>
 
-        <form method="POST" action="{{ route('login.store') }}" novalidate>
-            @csrf
+        <x-laragen::form action="{{ route('login.store') }}">
 
             <x-laragen::input.group
                 label="Email"
@@ -37,28 +36,32 @@
 
             </x-laragen::input.group>
 
+            <x-laragen::input.group
+                label="Remember me"
+                for="remember_me"
+                :errors="$errors->get('remember_me')"
+            >
 
-            <!-- Remember Me -->
-            <div class="block mt-4">
-                <label for="remember_me" class="inline-flex items-center">
-                    <input id="remember_me" type="checkbox"
-                           class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500"
-                           name="remember">
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
+                <x-laragen::input.checkbox
+                    name="remember_me"
+                />
+
+            </x-laragen::input.group>
+
 
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
+
                     <a href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
 
-                <x-primary-button class="ml-3">
+                <x-laragen::button class="ml-3">
                     {{ __('Log in') }}
-                </x-primary-button>
+                </x-laragen::button>
+
             </div>
-        </form>
+        </x-laragen::form>
     </x-auth.card>
 </x-layouts.guest>

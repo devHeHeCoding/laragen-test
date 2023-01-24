@@ -21,9 +21,9 @@
                 @csrf
 
                 <div>
-                    <x-primary-button>
+                    <x-laragen::button>
                         {{ __('Resend Verification Email') }}
-                    </x-primary-button>
+                    </x-laragen::button>
                 </div>
             </form>
 

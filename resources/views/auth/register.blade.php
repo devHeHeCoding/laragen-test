@@ -1,8 +1,7 @@
 <x-layouts.guest>
     <x-auth.card>
 
-        <form method="POST" action="{{ route('register.store') }}">
-            @csrf
+        <x-laragen::form action="{{ route('register.store') }}">
 
             <x-laragen::input.group
                 label="Name"
@@ -76,10 +75,10 @@
                     {{ __('Already registered?') }}
                 </a>
 
-                <x-primary-button class="ml-4">
+                <x-laragen::button class="ml-4">
                     {{ __('Register') }}
-                </x-primary-button>
+                </x-laragen::button>
             </div>
-        </form>
+        </x-laragen::form>
     </x-auth.card>
 </x-layouts.guest>
