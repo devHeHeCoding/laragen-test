@@ -1,15 +1,3 @@
-<div class="form-group">
-    <label for="7">
-        test
-        <input type="text"
-               id="7"
-               name="testCar935760899.test"
-               class="form-control"
-               placeholder="test"
-               wire:model.defer="testCar935760899.test"
-        >
-        <span class="error-message">
-            errorMessage
-        </span>
-    </label>
-</div>
+<x-laragen::input.group label="test" for="7" :errors="$errors->get('testCar1448640523.test')" >
+    <x-laragen::input.text placeholder="test" name="testCar1448640523.test" id="7" wire:model.defer="testCar1448640523.test" >
+</x-laragen::input.group>
