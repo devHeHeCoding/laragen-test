@@ -1,0 +1,12 @@
+<?php
+namespace App\Http\Livewire\TestCar1472809731;
+
+use Livewire\Component;
+use Livewire\WithPagination;
+use App\Http\Livewire\GeneratedTraits\TestCar1472809731\IndexTrait;
+
+class Index extends Component
+{
+    use WithPagination;
+    use IndexTrait;
+}
