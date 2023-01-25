@@ -11,7 +11,7 @@
                                             <li>
                                                             <a href="{{route('', )}}" class="sidebar__wrapper-menu-item">
                                     <i class="fa-solid fa-circle sidebar__wrapper-menu-item-icon"></i>
-                                    <span class="sidebar__wrapper-menu-item-title">Dr.</span>
+                                    <span class="sidebar__wrapper-menu-item-title">Miss</span>
                                 </a>
                             
                         </li>
