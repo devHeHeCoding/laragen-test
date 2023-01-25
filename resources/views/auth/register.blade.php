@@ -70,12 +70,11 @@
             </x-laragen::input.group>
 
             <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                   href="{{ route('login.show') }}">
+                <x-laragen::link href="{{ route('login.show') }}" color="link" class="mr-2">
                     {{ __('Already registered?') }}
-                </a>
+                </x-laragen::link>
 
-                <x-laragen::button class="ml-4">
+                <x-laragen::button>
                     {{ __('Register') }}
                 </x-laragen::button>
             </div>

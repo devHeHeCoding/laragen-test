@@ -11,12 +11,12 @@
             @apply text-sm flex-none;
 
             &:first-of-type {
-                @apply text-blue-400 hover:text-indigo-400;
+                @apply text-blue-400 hover:text-primary-400;
             }
 
             &:not(:first-of-type) {
                 a {
-                    @apply text-indigo-400 hover:underline;
+                    @apply text-primary-400 hover:underline;
                 }
             }
 

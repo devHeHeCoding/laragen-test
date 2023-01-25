@@ -20,9 +20,17 @@ module.exports = {
                 200: '#80A5B4',
                 400: '#244A53'
             },
-            indigo: {
-                100: '#4F46E50D',
-                400: '#4F46E5'
+            primary: {
+                50: '#fdf2f8',
+                100: '#fce7f3',
+                200: '#fbcfe8',
+                300: '#f9a8d4',
+                400: '#f472b6',
+                500: '#ec4899',
+                600: '#db2777',
+                700: '#be185d',
+                800: '#9d174d',
+                900: '#831843',
             },
             red: {
                 400: '#B50000'
@@ -51,6 +59,31 @@ module.exports = {
                 '30': '30px',
             }
         },
-    }
+    },
+    safelist: [
+        'rounded',
+        'rounded-sm',
+        'px-2.5',
+        'py-1.5',
+        'py-2',
+        'py-3',
+        'underline',
+        'border',
+        'border-transparent',
+        'hover:border-gray-300',
+        'inline-flex',
+        {
+            pattern: /bg-(primary|secondary|white|gray)-(100|200|300|400|500|600|700|800|900)/,
+            variants: ['lg', 'hover', 'focus', 'lg:hover'],
+        },
+        {
+            pattern: /text-(primary)-(100|200|300|400|500|600|700|800|900)/,
+            variants: ['lg', 'hover', 'focus', 'lg:hover'],
+        },
+        {
+            pattern: /ring-(primary|secondary)-(100|200|300|400|500|600|700|800|900)/,
+            variants: ['lg', 'hover', 'focus', 'lg:hover'],
+        },
+    ]
 }
 

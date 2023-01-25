@@ -55,7 +55,7 @@ form {
         }
 
         &:focus {
-            @apply border-indigo-400;
+            @apply border-primary-400;
 
             &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                 @apply text-sm text-gray-350 font-normal;
@@ -122,7 +122,7 @@ form {
             }
 
             &.select-arrow-active {
-                @apply border-indigo-400;
+                @apply border-primary-400;
                 &:after {
                     transform: rotate(-135deg);
                     top: 20px;

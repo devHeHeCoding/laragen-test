@@ -1,4 +1,4 @@
-<div class="profile-menu" x-data="{ open: false }">
+<div class="profile-menu" x-data="{ open: false }" xmlns:x-laragen="http://www.w3.org/1999/html">
     <div>
         <button @click="open = !open" type="button"
                 class="profile-menu__activator"
@@ -16,8 +16,10 @@
          x-transition:leave-end="opacity-0 scale-95"
          class="profile-menu__dropdown"
          role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-        <a href="#" class="profile-menu__dropdown-item active" role="menuitem" tabindex="-1">Your Profile</a>
-        <a href="#" class="profile-menu__dropdown-item" role="menuitem" tabindex="-1">Settings</a>
-        <a href="#" class="profile-menu__dropdown-item" role="menuitem" tabindex="-1">Sign out</a>
+        <x-laragen::form action="{{route('logout')}}">
+            <x-laragen::button color="link" class="w-full text-left">
+                Sign out
+            </x-laragen::button>
+        </x-laragen::form>
     </div>
 </div>

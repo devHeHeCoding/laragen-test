@@ -14,7 +14,7 @@
                 </x-brand.logo>
             </div>
             <div x-show="!$store.layout.navigationIsOpen">
-                <span class="text-2xl font-bold text-indigo-400">RO</span>
+                <span class="text-2xl font-bold text-primary-400">RO</span>
             </div>
             <div class="sidebar__wrapper-activator">
                 <button type="button" @click="$store.layout.toggleNavigation()" class="focus">

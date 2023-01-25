@@ -1,4 +1,4 @@
-<x-layouts.guest>
+<x-layouts.guest xmlns:x-laragen="http://www.w3.org/1999/html">
     <x-auth.card>
         <div class="mb-4 text-sm text-gray-600">
             {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
@@ -29,10 +29,9 @@
 
 
             <div class="flex items-center justify-end mt-4">
-
-                <a href="{{ route('login.show') }}">
+                <x-laragen::link href="{{ route('login.show') }}" color="link" class="mr-2">
                     {{ __('Login') }}
-                </a>
+                </x-laragen::link>
 
                 <x-laragen::button>
                     {{ __('Email Password Reset Link') }}

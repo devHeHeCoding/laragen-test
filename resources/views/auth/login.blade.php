@@ -1,4 +1,4 @@
-<x-layouts.guest>
+<x-layouts.guest xmlns:x-laragen="http://www.w3.org/1999/html">
     <x-auth.card>
 
         <x-auth.inline-status-notification/>
@@ -40,10 +40,12 @@
                 label="Remember me"
                 for="remember_me"
                 :errors="$errors->get('remember_me')"
+                class="flex items-center justify-end flex-row-reverse gap-2"
             >
 
                 <x-laragen::input.checkbox
                     name="remember_me"
+                    id="remember_me"
                 />
 
             </x-laragen::input.group>
@@ -51,13 +53,12 @@
 
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
-
-                    <a href="{{ route('password.request') }}">
+                    <x-laragen::link href="{{ route('password.request') }}" class="mr-2" color="link">
                         {{ __('Forgot your password?') }}
-                    </a>
+                    </x-laragen::link>
                 @endif
 
-                <x-laragen::button class="ml-3">
+                <x-laragen::button>
                     {{ __('Log in') }}
                 </x-laragen::button>
 
