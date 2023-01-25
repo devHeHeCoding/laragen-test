@@ -1,0 +1,10 @@
+<?php
+namespace App\Http\Livewire\TestCar476267929;
+
+use Livewire\Component;
+use App\Http\Livewire\GeneratedTraits\TestCar476267929\CreateTrait;
+
+class Create extends Component
+{
+    use CreateTrait;
+}
