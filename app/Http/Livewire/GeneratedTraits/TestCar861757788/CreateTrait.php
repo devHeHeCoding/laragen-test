@@ -1,38 +1,38 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar40686181;
+namespace App\Http\Livewire\GeneratedTraits\TestCar861757788;
 
-use App\Models\TestCar40686181;
-                use App\Models\TestCar2732044160;
+use App\Models\TestCar861757788;
+                use App\Models\TestCar2445750031;
     use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar40686181 $testCar40686181;
+    public TestCar861757788 $testCar861757788;
 
                                             
-    public function mount(TestCar40686181 $testCar40686181)
+    public function mount(TestCar861757788 $testCar861757788)
     {
-        $this->testCar40686181 = $testCar40686181;
+        $this->testCar861757788 = $testCar861757788;
                                                     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar40686181->save();
+        $this->testCar861757788->save();
 
-        return redirect()->route('laragen.admin.test_car40686181s.index');
+        return redirect()->route('laragen.admin.test_car861757788s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                'testCar40686181.test' => [
+                                                'testCar861757788.test' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
                                                                             ],
-                                                'testCar2732044160s' => [
+                                                'testCar2445750031s' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
