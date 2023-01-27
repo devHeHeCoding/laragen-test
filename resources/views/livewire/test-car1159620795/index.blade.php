@@ -9,7 +9,7 @@
                 <thead>
                     <tr>
                                                     <th class="w-28">
-                                {{ trans('cruds.test-car1633802935.fields.test') }}                            </th>
+                                {{ trans('cruds.application.fields.test') }}                            </th>
                                                 <th class="w-28">{{ trans('global.actions') }}</th>
                     </tr>
                 </thead>
@@ -27,11 +27,11 @@
                                                         <td>
                                 <div class="form-group">
                                     
-                                                                            <a href="{{ route('laragen.admin.test_cars.show', ['testCar1633802935' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen.admin.test_cars.show', ['testCar1159620795' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.show') }}
                                         </a>
                                     
-                                                                            <a href="{{ route('laragen.admin.test_cars.edit', ['testCar1633802935' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen.admin.test_cars.edit', ['testCar1159620795' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.edit') }}
                                         </a>
                                     
@@ -48,11 +48,6 @@
                     @endforelse
                 </tbody>
             </table>
-        </div>
-        <div class="card-body">
-            <div class="pt-3">
-                {{ $items->links() }}
-            </div>
         </div>
     </div>
 </div>
