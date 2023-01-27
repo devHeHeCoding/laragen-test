@@ -1,38 +1,38 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar50840283;
+namespace App\Http\Livewire\GeneratedTraits\TestCar1407877259;
 
-use App\Models\TestCar50840283;
-                use App\Models\TestCar21657116178;
+use App\Models\TestCar1407877259;
+                use App\Models\TestCar262000380;
     use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar50840283 $testCar50840283;
+    public TestCar1407877259 $testCar1407877259;
 
                                             
-    public function mount(TestCar50840283 $testCar50840283)
+    public function mount(TestCar1407877259 $testCar1407877259)
     {
-        $this->testCar50840283 = $testCar50840283;
+        $this->testCar1407877259 = $testCar1407877259;
                                                     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar50840283->save();
+        $this->testCar1407877259->save();
 
-        return redirect()->route('laragen.admin.test_car50840283s.index');
+        return redirect()->route('laragen.admin.test_car1407877259s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                'testCar50840283.test' => [
+                                                'testCar1407877259.test' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
                                                                             ],
-                                                'testCar21657116178s' => [
+                                                'testCar262000380s' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
