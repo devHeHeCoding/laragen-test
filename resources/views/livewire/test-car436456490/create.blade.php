@@ -10,8 +10,8 @@
                     <fieldset>
                                             @includeFirst(
                     [
-                        'admin.crud-controller.testcontroller.create.prof._kaylie_gerhold_ph_d_id',
-                        'admin.generated.crud-controller.testcontroller.create.prof._kaylie_gerhold_ph_d_id'
+                        'admin.crud-controller.testcontroller.create.alicia_lesch_id',
+                        'admin.generated.crud-controller.testcontroller.create.alicia_lesch_id'
                     ]
                 )
                     </fieldset>
@@ -20,7 +20,7 @@
         <button class="btn btn-indigo mr-2" type="submit">
             {{ trans('global.save') }}        </button>
                 <a href="{{ route('laragen.admin.test_cars.index') }}" class="btn btn-secondary">
-            {{ trans('global.show') }}
+            {{ trans('global.cancel') }}
         </a>
     </div>
 </form>
