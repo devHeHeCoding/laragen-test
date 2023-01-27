@@ -9,9 +9,9 @@
         </button>
         <ul :hidden="!isOpen">
                             <li>
-        <a href="" class="sidebar__wrapper-menu-item Totam.">
+        <a href="" class="sidebar__wrapper-menu-item Repellat.">
             <i class="fa-thin fa-house sidebar__wrapper-menu-item-icon"></i>
-            <span class="sidebar__wrapper-menu-item-title">Mr.</span>
+            <span class="sidebar__wrapper-menu-item-title">Prof.</span>
         </a>
     </li>
                     </ul>
