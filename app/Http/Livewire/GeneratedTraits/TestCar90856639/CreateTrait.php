@@ -1,38 +1,38 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar1793038448;
+namespace App\Http\Livewire\GeneratedTraits\TestCar90856639;
 
-use App\Models\TestCar1793038448;
-                use App\Models\TestCar2663105981;
+use App\Models\TestCar90856639;
+                use App\Models\TestCar22039053376;
     use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar1793038448 $testCar1793038448;
+    public TestCar90856639 $testCar90856639;
 
                                             
-    public function mount(TestCar1793038448 $testCar1793038448)
+    public function mount(TestCar90856639 $testCar90856639)
     {
-        $this->testCar1793038448 = $testCar1793038448;
+        $this->testCar90856639 = $testCar90856639;
                                                     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar1793038448->save();
+        $this->testCar90856639->save();
 
-        return redirect()->route('laragen.admin.test_car1793038448s.index');
+        return redirect()->route('laragen.admin.test_car90856639s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                'testCar1793038448.test' => [
+                                                'testCar90856639.test' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
                                                                             ],
-                                                'testCar2663105981s' => [
+                                                'testCar22039053376s' => [
                                                             'string',
                                                                 'nullable',
                                                                 'required',
