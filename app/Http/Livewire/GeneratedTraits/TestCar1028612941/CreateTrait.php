@@ -1,38 +1,38 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar2025907584;
+namespace App\Http\Livewire\GeneratedTraits\TestCar1028612941;
 
-use App\Models\TestCar2025907584;
-                use App\Models\TestCar21224436154;
+use App\Models\TestCar1028612941;
+                use App\Models\TestCar21245104015;
     use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar2025907584 $testCar2025907584;
+    public TestCar1028612941 $testCar1028612941;
 
                                             
-    public function mount(TestCar2025907584 $testCar2025907584)
+    public function mount(TestCar1028612941 $testCar1028612941)
     {
-        $this->testCar2025907584 = $testCar2025907584;
+        $this->testCar1028612941 = $testCar1028612941;
                                                     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar2025907584->save();
+        $this->testCar1028612941->save();
 
-        return redirect()->route('laragen.admin.test_car2025907584s.index');
+        return redirect()->route('laragen.admin.test_car1028612941s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar2025907584.test' => [
+                                                                    'testCar1028612941.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar2025907584.caterina_rogahn_id' => [
+                                                                    'testCar1028612941.prof._kiera_medhurst_id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
