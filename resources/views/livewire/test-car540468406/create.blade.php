@@ -1,4 +1,4 @@
-<form wire:submit.prevent="submit" class="pt-3" novalidate>
+<x-laragen::form wire:submit.prevent="submit" class="pt-3">
                                         <fieldset>
                                             @includeFirst(
                     [
@@ -10,17 +10,18 @@
                     <fieldset>
                                             @includeFirst(
                     [
-                        'admin.crud-controller.testcontroller.create.prof._kiera_medhurst_id',
-                        'admin.generated.crud-controller.testcontroller.create.prof._kiera_medhurst_id'
+                        'admin.crud-controller.testcontroller.create.lonzo_o&#039;_conner_id',
+                        'admin.generated.crud-controller.testcontroller.create.lonzo_o&#039;_conner_id'
                     ]
                 )
                     </fieldset>
     
     <div class="form-group">
-        <button class="btn btn-indigo mr-2" type="submit">
-            {{ trans('global.save') }}        </button>
+
+        <x-laragen::button class="mr-2">            {{ trans('global.save') }}        </x-laragen::button>
                 <a href="{{ route('laragen.admin.test_cars.index') }}" class="btn btn-secondary">
-            {{ trans('global.cancel') }}
+            {{ trans('global.show') }}
         </a>
     </div>
-</form>
+
+</x-laragen::form>
