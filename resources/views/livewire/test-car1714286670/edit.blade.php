@@ -1,4 +1,5 @@
-<x-laragen::form wire:submit.prevent="submit" class="pt-3">                    <fieldset>
+<form wire:submit.prevent="submit" class="pt-3" novalidate>
+                    <fieldset>
                                             @includeFirst(
                     [
                         'admin.crud-controller.testcontroller.edit.test',
@@ -14,5 +15,4 @@
             {{ trans('global.cancel') }}
         </a>
     </div>
-
-</x-laragen::form>
+</form>
