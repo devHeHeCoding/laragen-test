@@ -9,7 +9,7 @@
                 <thead>
                     <tr>
                                                     <th class="w-28">
-                                {{ trans('cruds.test-car911040946.fields.test') }}                            </th>
+                                {{ trans('cruds.test-car321241581.fields.test') }}                            </th>
                                                 <th class="w-28">{{ trans('global.actions') }}</th>
                     </tr>
                 </thead>
@@ -27,11 +27,11 @@
                                                         <td>
                                 <div class="form-group">
                                     
-                                                                            <a href="{{ route('laragen.admin.test_cars.show', ['testCar911040946' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen.admin.test_cars.show', ['testCar321241581' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.show') }}
                                         </a>
                                     
-                                                                            <a href="{{ route('laragen.admin.test_cars.edit', ['testCar911040946' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen.admin.test_cars.edit', ['testCar321241581' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.edit') }}
                                         </a>
                                     
