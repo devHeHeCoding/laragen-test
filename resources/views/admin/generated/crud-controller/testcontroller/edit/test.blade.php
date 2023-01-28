@@ -1,11 +1,11 @@
 <div class="form-group">
     <label for="7">
-        {{ trans('cruds.test-car1018942994.fields.test') }}        <input type="number"
+        {{ trans('cruds.test-car686976583.fields.test') }}        <input type="number"
                id="7"
-               name="testCar1018942994.test"
+               name="testCar686976583.test"
                class="form-control"
                placeholder="test"
-               wire:model.defer="testCar1018942994.test"
+               wire:model.defer="testCar686976583.test"
         >
         <span class="error-message">
             errorMessage
