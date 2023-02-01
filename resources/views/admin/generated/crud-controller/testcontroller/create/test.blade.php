@@ -1,3 +1,3 @@
-<x-laragen::input.group label="cruds.test-car856968336.fields.test" for="7" :errors="$errors->get('testCar856968336.test')" >
-    <x-laragen::input.text placeholder="test" name="testCar856968336.test" id="7" wire:model.defer="testCar856968336.test" />
+<x-laragen::input.group label="cruds.test-car397828097.fields.test" for="7" :errors="$errors->get('testCar397828097.test')" >
+    <x-laragen::input.text placeholder="test" name="testCar397828097.test" id="7" wire:model.defer="testCar397828097.test" />
 </x-laragen::input.group>
