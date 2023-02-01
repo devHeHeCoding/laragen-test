@@ -1,13 +1,3 @@
-<div class="form-group {{$errors->has('testCar1556346522.test') ? 'error' : ''}}">
-    <label for="7">
-        {{ trans('cruds.test-car1556346522.fields.test') }}        <input type="number"
-               id="7"
-               name="testCar1556346522.test"
-               class="form-control"
-               placeholder="test"
-               wire:model.defer="testCar1556346522.test"
-        >
-        <span class="error-message">
-            {{$errors->first('testCar1556346522.test')}}        </span>
-    </label>
-</div>
+<x-laragen::input.group label="cruds.test-car595373304.fields.test" for="7" :errors="$errors->get('testCar595373304.test')" >
+    <x-laragen::input.text type="number" placeholder="test" name="testCar595373304.test" id="7" wire:model.defer="testCar595373304.test" />
+</x-laragen::input.group>
