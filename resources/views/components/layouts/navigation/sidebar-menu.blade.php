@@ -10,8 +10,8 @@
         <ul :hidden="!isOpen">
                             <li>
         <a href="" class="sidebar__wrapper-menu-item">
-            <i class="Id. sidebar__wrapper-menu-item-icon"></i>
-            <span class="sidebar__wrapper-menu-item-title">Miss</span>
+            <i class="Eius modi. sidebar__wrapper-menu-item-icon"></i>
+            <span class="sidebar__wrapper-menu-item-title">Dr.</span>
         </a>
     </li>
                     </ul>
