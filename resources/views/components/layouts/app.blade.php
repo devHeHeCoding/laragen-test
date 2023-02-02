@@ -9,6 +9,7 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="https://kit.fontawesome.com/4845a545eb.js" crossorigin="anonymous"></script>
 
     @livewireStyles
 </head>

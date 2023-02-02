@@ -23,3 +23,10 @@
 8. Run ``./vendor/bin/sail npm install`` to install node packages 
 9. Run ``./vendor/bin/sail npm run dev`` to compile development assets.
 10. Enjoy developing!
+
+
+
+## Change log
+
+### 02.02.2023
+- removed font awesome from npm and added as kit to allow unlimited icons 
