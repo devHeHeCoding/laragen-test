@@ -6,6 +6,7 @@
                         'admin.generated.crud-controller.testcontroller.edit.test'
                     ]
                 )
+                @includeIf('admin.crud-controller.testcontroller.edit.test_after')
                     </fieldset>
                                             
     <div class="form-group">
