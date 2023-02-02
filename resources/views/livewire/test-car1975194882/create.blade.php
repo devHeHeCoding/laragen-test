@@ -8,10 +8,10 @@
             </fieldset>
         <fieldset>
                                 @includeFirst([
-                'admin.crud-controller.testcontroller.create.luigi_kuphal_id',
-                'admin.generated.crud-controller.testcontroller.create.luigi_kuphal_id'
+                'admin.crud-controller.testcontroller.create.dr._florine_harris_ph_d_id',
+                'admin.generated.crud-controller.testcontroller.create.dr._florine_harris_ph_d_id'
             ])
-            @includeIf('admin.crud-controller.testcontroller.create.luigi_kuphal_id_after')
+            @includeIf('admin.crud-controller.testcontroller.create.dr._florine_harris_ph_d_id_after')
             </fieldset>
 
     <div class="form-group">
