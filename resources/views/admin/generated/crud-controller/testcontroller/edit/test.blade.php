@@ -1,13 +1,13 @@
-<div class="form-group {{$errors->has('testCar1975194882.test') ? 'error' : ''}}">
+<div class="form-group {{$errors->has('testCar730684024.test') ? 'error' : ''}}">
     <label for="7">
-        {{ trans('cruds.test-car1975194882.fields.test') }}        <input type="number"
+        {{ trans('cruds.test-car730684024.fields.test') }}        <input type="number"
                id="7"
-               name="testCar1975194882.test"
+               name="testCar730684024.test"
                class="form-control"
                placeholder="test"
-               wire:model.defer="testCar1975194882.test"
+               wire:model.defer="testCar730684024.test"
         >
         <span class="error-message">
-            {{$errors->first('testCar1975194882.test')}}        </span>
+            {{$errors->first('testCar730684024.test')}}        </span>
     </label>
 </div>
