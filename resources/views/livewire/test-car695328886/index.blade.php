@@ -9,7 +9,10 @@
                 <thead>
                     <tr>
                                                     <th class="w-28">
-                                {{ trans('cruds.test-car876424200.fields.test') }}                            </th>
+                                {{ trans('cruds.test-car695328886.fields.test') }}                            </th>
+                            @if(\View::exists('admin.crud-controller.testcontroller.index.test_after_header'))
+                                @includeIf('admin.crud-controller.testcontroller.index.test_after_header')
+                            @endif
                                                 <th class="w-28">{{ trans('global.actions') }}</th>
                     </tr>
                 </thead>
@@ -23,15 +26,19 @@
                                             'admin.generated.crud-controller.testcontroller.index.test'
                                         ]
                                     )
+                                    @includeIf('admin.crud-controller.testcontroller.index.test_after')
                                 </td>
+                                @if(\View::exists('admin.crud-controller.testcontroller.index.test_after_row'))
+                                    @includeIf('admin.crud-controller.testcontroller.index.test_after_row')
+                                @endif
                                                         <td>
                                 <div class="form-group">
                                     
-                                                                            <a href="{{ route('laragen.admin.test_cars.show', ['testCar876424200' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen.admin.test_cars.show', ['testCar695328886' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.show') }}
                                         </a>
                                     
-                                                                            <a href="{{ route('laragen.admin.test_cars.edit', ['testCar876424200' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen.admin.test_cars.edit', ['testCar695328886' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.edit') }}
                                         </a>
                                     
