@@ -9,7 +9,7 @@
                 <thead>
                     <tr>
                                                     <th class="w-28">
-                                {{ trans('cruds.test-car176624470.fields.test') }}                            </th>
+                                {{ trans('cruds.test-car465974586.fields.test') }}                            </th>
                             @if(\View::exists('admin.crud-controller.testcontroller.index.test_after_header'))
                                 @includeIf('admin.crud-controller.testcontroller.index.test_after_header')
                             @endif
@@ -34,11 +34,11 @@
                                                         <td>
                                 <div class="form-group">
                                     
-                                                                            <a href="{{ route('laragen.admin.test_cars.show', ['testCar176624470' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen.admin.test_cars.show', ['testCar465974586' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.show') }}
                                         </a>
                                     
-                                                                            <a href="{{ route('laragen.admin.test_cars.edit', ['testCar176624470' => $item->id]) }}" class="btn btn-secondary">
+                                                                            <a href="{{ route('laragen.admin.test_cars.edit', ['testCar465974586' => $item->id]) }}" class="btn btn-secondary">
                                             {{ trans('global.edit') }}
                                         </a>
                                     
