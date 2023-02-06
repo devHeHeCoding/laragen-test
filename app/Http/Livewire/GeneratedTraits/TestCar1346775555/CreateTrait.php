@@ -1,38 +1,38 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar970372432;
+namespace App\Http\Livewire\GeneratedTraits\TestCar1346775555;
 
-use App\Models\TestCar970372432;
-                    use App\Models\TestCar2119323290;
+use App\Models\TestCar1346775555;
+                    use App\Models\TestCar21229529675;
         use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar970372432 $testCar970372432;
+    public TestCar1346775555 $testCar1346775555;
 
                                             
-    public function mount(TestCar970372432 $testCar970372432)
+    public function mount(TestCar1346775555 $testCar1346775555)
     {
-        $this->testCar970372432 = $testCar970372432;
+        $this->testCar1346775555 = $testCar1346775555;
                                                     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar970372432->save();
+        $this->testCar1346775555->save();
 
-        return redirect()->route('laragen.admin.test_car970372432s.index');
+        return redirect()->route('laragen.admin.test_car1346775555s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar970372432.test' => [
+                                                                    'testCar1346775555.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar970372432.raphael_leuschke_v_id' => [
+                                                                    'testCar1346775555.patience_feeney_id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
