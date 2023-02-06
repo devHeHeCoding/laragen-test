@@ -1,38 +1,38 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar851343037;
+namespace App\Http\Livewire\GeneratedTraits\TestCar1323929317;
 
-use App\Models\TestCar851343037;
-                    use App\Models\TestCar21771264889;
+use App\Models\TestCar1323929317;
+                    use App\Models\TestCar2626485518;
         use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar851343037 $testCar851343037;
+    public TestCar1323929317 $testCar1323929317;
 
                                             
-    public function mount(TestCar851343037 $testCar851343037)
+    public function mount(TestCar1323929317 $testCar1323929317)
     {
-        $this->testCar851343037 = $testCar851343037;
+        $this->testCar1323929317 = $testCar1323929317;
                                                     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar851343037->save();
+        $this->testCar1323929317->save();
 
-        return redirect()->route('laragen.admin.test_car851343037s.index');
+        return redirect()->route('laragen.admin.test_car1323929317s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar851343037.test' => [
+                                                                    'testCar1323929317.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar851343037.makenna_boyle_id' => [
+                                                                    'testCar1323929317.prof._philip_gutkowski_sr._id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
