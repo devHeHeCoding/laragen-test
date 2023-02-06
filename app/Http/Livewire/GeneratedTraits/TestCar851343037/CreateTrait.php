@@ -1,38 +1,38 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar1546476527;
+namespace App\Http\Livewire\GeneratedTraits\TestCar851343037;
 
-use App\Models\TestCar1546476527;
-                use App\Models\TestCar22105699980;
-    use Illuminate\Database\Eloquent\Collection;
+use App\Models\TestCar851343037;
+                    use App\Models\TestCar21771264889;
+        use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar1546476527 $testCar1546476527;
+    public TestCar851343037 $testCar851343037;
 
                                             
-    public function mount(TestCar1546476527 $testCar1546476527)
+    public function mount(TestCar851343037 $testCar851343037)
     {
-        $this->testCar1546476527 = $testCar1546476527;
+        $this->testCar851343037 = $testCar851343037;
                                                     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar1546476527->save();
+        $this->testCar851343037->save();
 
-        return redirect()->route('laragen.admin.test_car1546476527s.index');
+        return redirect()->route('laragen.admin.test_car851343037s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar1546476527.test' => [
+                                                                    'testCar851343037.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar1546476527.myah_emard_id' => [
+                                                                    'testCar851343037.makenna_boyle_id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',

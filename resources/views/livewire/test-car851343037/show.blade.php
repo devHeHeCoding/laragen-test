@@ -2,7 +2,7 @@
     <table class="mt-6 w-full">
                     <tr>
                 <th class="text-left">
-                    {{ trans('cruds.test-car1546476527.fields.test') }}                </th>
+                    {{ trans('cruds.test-car851343037.fields.test') }}                </th>
                 <td>
                     @includeFirst(
                         [
@@ -12,5 +12,6 @@
                     )
                 </td>
             </tr>
+            @includeIf('admin.crud-controller.testcontroller.show.test_after')
             </table>
 </div>
