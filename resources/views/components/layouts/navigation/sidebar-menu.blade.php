@@ -10,8 +10,8 @@
         <ul :hidden="!isOpen">
                             <li>
         <a href="" class="sidebar__wrapper-menu-item">
-            <i class="Quos. sidebar__wrapper-menu-item-icon"></i>
-            <span class="sidebar__wrapper-menu-item-title">Dr.</span>
+            <i class="Mollitia. sidebar__wrapper-menu-item-icon"></i>
+            <span class="sidebar__wrapper-menu-item-title">Ms.</span>
         </a>
     </li>
                     </ul>
