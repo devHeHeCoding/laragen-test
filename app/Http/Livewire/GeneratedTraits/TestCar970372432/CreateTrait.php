@@ -1,38 +1,38 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar1189261820;
+namespace App\Http\Livewire\GeneratedTraits\TestCar970372432;
 
-use App\Models\TestCar1189261820;
-                    use App\Models\TestCar2252035748;
+use App\Models\TestCar970372432;
+                    use App\Models\TestCar2119323290;
         use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar1189261820 $testCar1189261820;
+    public TestCar970372432 $testCar970372432;
 
                                             
-    public function mount(TestCar1189261820 $testCar1189261820)
+    public function mount(TestCar970372432 $testCar970372432)
     {
-        $this->testCar1189261820 = $testCar1189261820;
+        $this->testCar970372432 = $testCar970372432;
                                                     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar1189261820->save();
+        $this->testCar970372432->save();
 
-        return redirect()->route('laragen.admin.test_car1189261820s.index');
+        return redirect()->route('laragen.admin.test_car970372432s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar1189261820.test' => [
+                                                                    'testCar970372432.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar1189261820.mr._brian_prosacco_id' => [
+                                                                    'testCar970372432.raphael_leuschke_v_id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
