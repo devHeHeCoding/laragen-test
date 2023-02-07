@@ -1,38 +1,38 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar443014738;
+namespace App\Http\Livewire\GeneratedTraits\TestCar1729187173;
 
-use App\Models\TestCar443014738;
-                    use App\Models\TestCar2100569587;
+use App\Models\TestCar1729187173;
+                    use App\Models\TestCar22058410205;
         use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar443014738 $testCar443014738;
+    public TestCar1729187173 $testCar1729187173;
 
                                             
-    public function mount(TestCar443014738 $testCar443014738)
+    public function mount(TestCar1729187173 $testCar1729187173)
     {
-        $this->testCar443014738 = $testCar443014738;
+        $this->testCar1729187173 = $testCar1729187173;
                                                     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar443014738->save();
+        $this->testCar1729187173->save();
 
-        return redirect()->route('laragen.admin.test_car443014738s.index');
+        return redirect()->route('laragen.admin.test_car1729187173s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar443014738.test' => [
+                                                                    'testCar1729187173.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar443014738.dwight_johnson_id' => [
+                                                                    'testCar1729187173.esteban_hackett_id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
