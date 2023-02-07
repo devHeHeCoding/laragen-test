@@ -1,43 +1,43 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar45754642;
+namespace App\Http\Livewire\GeneratedTraits\TestCar138184623;
 
-use App\Models\TestCar45754642;
-                    use App\Models\TestCar2696254184;
+use App\Models\TestCar138184623;
+                    use App\Models\TestCar21537690666;
         use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar45754642 $testCar45754642;
+    public TestCar138184623 $testCar138184623;
 
                                             
-    public function mount(TestCar45754642 $testCar45754642)
+    public function mount(TestCar138184623 $testCar138184623)
     {
-        $this->testCar45754642 = $testCar45754642;
+        $this->testCar138184623 = $testCar138184623;
                                                     }
 
     public function render()
     {
-        return view('livewire.generated.test-car45754642.create');
+        return view('livewire.generated.test-car138184623.create');
     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar45754642->save();
+        $this->testCar138184623->save();
 
-        return redirect()->route('laragen.admin.test_car45754642s.index');
+        return redirect()->route('laragen.admin.test_car138184623s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar45754642.test' => [
+                                                                    'testCar138184623.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar45754642.robb_weber_v_id' => [
+                                                                    'testCar138184623.dorothy_wilkinson_id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
