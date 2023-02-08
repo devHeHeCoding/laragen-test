@@ -1,43 +1,43 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar1780273142;
+namespace App\Http\Livewire\GeneratedTraits\TestCar289518111;
 
-use App\Models\TestCar1780273142;
-                    use App\Models\TestCar22134990307;
+use App\Models\TestCar289518111;
+                    use App\Models\TestCar271940798;
         use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar1780273142 $testCar1780273142;
+    public TestCar289518111 $testCar289518111;
 
                                             
-    public function mount(TestCar1780273142 $testCar1780273142)
+    public function mount(TestCar289518111 $testCar289518111)
     {
-        $this->testCar1780273142 = $testCar1780273142;
+        $this->testCar289518111 = $testCar289518111;
                                                     }
 
     public function render()
     {
-        return view('livewire.generated.test-car1780273142.create');
+        return view('livewire.generated.test-car289518111.create');
     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar1780273142->save();
+        $this->testCar289518111->save();
 
-        return redirect()->route('laragen.admin.test_car1780273142s.index');
+        return redirect()->route('laragen.admin.test_car289518111s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar1780273142.test' => [
+                                                                    'testCar289518111.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar1780273142.laura_green_id' => [
+                                                                    'testCar289518111.olga_mc_kenzie_id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
