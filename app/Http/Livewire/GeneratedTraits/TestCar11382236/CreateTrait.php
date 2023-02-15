@@ -1,43 +1,43 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar475663033;
+namespace App\Http\Livewire\GeneratedTraits\TestCar11382236;
 
-use App\Models\TestCar475663033;
-                    use App\Models\TestCar277303995;
+use App\Models\TestCar11382236;
+                    use App\Models\TestCar2586506791;
         use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar475663033 $testCar475663033;
+    public TestCar11382236 $testCar11382236;
 
                                             
-    public function mount(TestCar475663033 $testCar475663033)
+    public function mount(TestCar11382236 $testCar11382236)
     {
-        $this->testCar475663033 = $testCar475663033;
+        $this->testCar11382236 = $testCar11382236;
                                                     }
 
     public function render()
     {
-        return view('livewire.generated.test-car475663033.create');
+        return view('livewire.generated.test-car11382236.create');
     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar475663033->save();
+        $this->testCar11382236->save();
 
-        return redirect()->route('laragen.admin.test_car475663033s.index');
+        return redirect()->route('laragen.admin.test_car11382236s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar475663033.test' => [
+                                                                    'testCar11382236.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar475663033.ms._phyllis_marvin_id' => [
+                                                                    'testCar11382236.nia_donnelly_id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
