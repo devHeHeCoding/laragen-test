@@ -1,43 +1,43 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar20837838;
+namespace App\Http\Livewire\GeneratedTraits\TestCar822257703;
 
-use App\Models\TestCar20837838;
-                    use App\Models\TestCar21312630471;
+use App\Models\TestCar822257703;
+                    use App\Models\TestCar21154936442;
         use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar20837838 $testCar20837838;
+    public TestCar822257703 $testCar822257703;
 
                                             
-    public function mount(TestCar20837838 $testCar20837838)
+    public function mount(TestCar822257703 $testCar822257703)
     {
-        $this->testCar20837838 = $testCar20837838;
+        $this->testCar822257703 = $testCar822257703;
                                                     }
 
     public function render()
     {
-        return view('livewire.generated.test-car20837838.create');
+        return view('livewire.generated.test-car822257703.create');
     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar20837838->save();
+        $this->testCar822257703->save();
 
-        return redirect()->route('laragen.admin.test_car20837838s.index');
+        return redirect()->route('laragen.admin.test_car822257703s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar20837838.test' => [
+                                                                    'testCar822257703.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar20837838.wilhelmine_west_id' => [
+                                                                    'testCar822257703.ms._chanel_spencer_sr._id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
