@@ -10,7 +10,7 @@
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
-        "hehecoding/laragen-ui-kit": "^1.3.1",
+        "hehecoding/laragen-ui-kit": "^1.4.0",
         "laravel/framework": "^9.50",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.7",
