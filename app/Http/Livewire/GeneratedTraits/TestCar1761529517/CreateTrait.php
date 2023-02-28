@@ -1,43 +1,43 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar584991464;
+namespace App\Http\Livewire\GeneratedTraits\TestCar1761529517;
 
-use App\Models\TestCar584991464;
-                    use App\Models\TestCar2246734916;
+use App\Models\TestCar1761529517;
+                    use App\Models\TestCar21982770724;
         use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar584991464 $testCar584991464;
+    public TestCar1761529517 $testCar1761529517;
 
                                             
-    public function mount(TestCar584991464 $testCar584991464)
+    public function mount(TestCar1761529517 $testCar1761529517)
     {
-        $this->testCar584991464 = $testCar584991464;
+        $this->testCar1761529517 = $testCar1761529517;
                                                     }
 
     public function render()
     {
-        return view('livewire.generated.test-car584991464.create');
+        return view('livewire.generated.test-car1761529517.create');
     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar584991464->save();
+        $this->testCar1761529517->save();
 
-        return redirect()->route('laragen.admin.test_car584991464s.index');
+        return redirect()->route('laragen.admin.test_car1761529517s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar584991464.test' => [
+                                                                    'testCar1761529517.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar584991464.miss_alana_lowe_id' => [
+                                                                    'testCar1761529517.felicita_ankunding_id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
