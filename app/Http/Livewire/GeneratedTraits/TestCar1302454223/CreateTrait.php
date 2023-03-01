@@ -1,43 +1,43 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar2084720087;
+namespace App\Http\Livewire\GeneratedTraits\TestCar1302454223;
 
-use App\Models\TestCar2084720087;
-                    use App\Models\TestCar2422308149;
+use App\Models\TestCar1302454223;
+                    use App\Models\TestCar2753418857;
         use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar2084720087 $testCar2084720087;
+    public TestCar1302454223 $testCar1302454223;
 
                                             
-    public function mount(TestCar2084720087 $testCar2084720087)
+    public function mount(TestCar1302454223 $testCar1302454223)
     {
-        $this->testCar2084720087 = $testCar2084720087;
+        $this->testCar1302454223 = $testCar1302454223;
                                                     }
 
     public function render()
     {
-        return view('livewire.generated.test-car2084720087.create');
+        return view('livewire.generated.test-car1302454223.create');
     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar2084720087->save();
+        $this->testCar1302454223->save();
 
-        return redirect()->route('laragen.admin.test_car2084720087s.index');
+        return redirect()->route('laragen.admin.test_car1302454223s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar2084720087.test' => [
+                                                                    'testCar1302454223.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar2084720087.jarrett_nienow_id' => [
+                                                                    'testCar1302454223.torrance_kling_id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
