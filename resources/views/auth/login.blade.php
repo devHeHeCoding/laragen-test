@@ -53,9 +53,9 @@
 
             <div class="flex items-center justify-end mt-4">
                 @if (Route::has('password.request'))
-                    <x-laragen::link href="{{ route('password.request') }}" class="mr-2" color="link">
+                    <x-laragen::button href="{{ route('password.request') }}" class="mr-2" variant="text">
                         {{ __('Forgot your password?') }}
-                    </x-laragen::link>
+                    </x-laragen::button>
                 @endif
 
                 <x-laragen::button>

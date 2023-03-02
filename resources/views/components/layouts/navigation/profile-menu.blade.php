@@ -17,7 +17,7 @@
          class="profile-menu__dropdown"
          role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
         <x-laragen::form action="{{route('logout')}}">
-            <x-laragen::button color="link" class="w-full text-left">
+            <x-laragen::button class="w-full text-left">
                 Sign out
             </x-laragen::button>
         </x-laragen::form>
