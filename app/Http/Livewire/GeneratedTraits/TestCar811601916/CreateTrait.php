@@ -1,43 +1,43 @@
 <?php
-namespace App\Http\Livewire\GeneratedTraits\TestCar377863369;
+namespace App\Http\Livewire\GeneratedTraits\TestCar811601916;
 
-use App\Models\TestCar377863369;
-                    use App\Models\TestCar2423767110;
+use App\Models\TestCar811601916;
+                    use App\Models\TestCar21592964455;
         use Illuminate\Database\Eloquent\Collection;
 
 trait CreateTrait
 {
-    public TestCar377863369 $testCar377863369;
+    public TestCar811601916 $testCar811601916;
 
                                             
-    public function mount(TestCar377863369 $testCar377863369)
+    public function mount(TestCar811601916 $testCar811601916)
     {
-        $this->testCar377863369 = $testCar377863369;
+        $this->testCar811601916 = $testCar811601916;
                                                     }
 
     public function render()
     {
-        return view('livewire.generated.test-car377863369.create');
+        return view('livewire.generated.test-car811601916.create');
     }
 
     public function submit()
     {
         $this->validate();
 
-        $this->testCar377863369->save();
+        $this->testCar811601916->save();
 
-        return redirect()->route('laragen.admin.test_car377863369s.index');
+        return redirect()->route('laragen.admin.test_car811601916s.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar377863369.test' => [
+                                                                    'testCar811601916.test' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
                                                                 ],
-                                                                    'testCar377863369.berry_paucek_id' => [
+                                                                    'testCar811601916.prof._quincy_rippin_id' => [
                                                     'string',
                                                     'nullable',
                                                     'required',
