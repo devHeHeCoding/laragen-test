@@ -7,7 +7,7 @@ Route::name('laragen.')
 
                                     Route::get('test_cars', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.test_cars.index');
                             Route::get('test_cars/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.test_cars.create');
-                            Route::get('test_cars/{testCar1584959880}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.test_cars.show');
-                            Route::get('test_cars/{testCar1584959880}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.test_cars.edit');
+                            Route::get('test_cars/{testCar18586312}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.test_cars.show');
+                            Route::get('test_cars/{testCar18586312}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.test_cars.edit');
                     
     });
