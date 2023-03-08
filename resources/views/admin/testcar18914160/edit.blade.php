@@ -1,0 +1,9 @@
+<x-layouts.app>
+
+    <x-slot:title>    <h1>
+        {{ trans('global.edit') }}
+        {{ trans('cruds.test-car18914160.title_singular') }}    </h1>
+    </x-slot:title>
+    @livewire('test-car18914160.edit', ['testCar18914160' => $testCar18914160])
+
+</x-layouts.app>
