@@ -15,10 +15,10 @@
         
         <div class="flex-1 -mx-2">
                                             @includeFirst([
-                            'admin.crud-controller.testcontroller.create.lauren_connelly_id',
-                            'admin.generated.crud-controller.testcontroller.create.lauren_connelly_id'
+                            'admin.crud-controller.testcontroller.create.murphy_bauch_id',
+                            'admin.generated.crud-controller.testcontroller.create.murphy_bauch_id'
                         ])
-                @includeIf('admin.crud-controller.testcontroller.create.lauren_connelly_id_after')
+                @includeIf('admin.crud-controller.testcontroller.create.murphy_bauch_id_after')
                     </div>
     </fieldset>
 
