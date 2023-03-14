@@ -2,7 +2,7 @@
     <table class="mt-6 w-full">
                     <tr>
                 <th class="text-left">
-                    {{ trans('cruds.test-car876793704.fields.test') }}                </th>
+                    {{ trans('cruds.test-car590167015.fields.test') }}                </th>
                 <td>
                     @includeFirst(
                         [
