@@ -10,7 +10,7 @@
                     <thead>
                     <tr>
                                                     <th>
-                                {{ trans('cruds.test-car239793807.fields.test') }}                            </th>
+                                {{ trans('cruds.test-car250640198.fields.test') }}                            </th>
                             @if(\View::exists('admin.crud-controller.testcontroller.index.test_after_header'))
                                 @includeIf('admin.crud-controller.testcontroller.index.test_after_header')
                                 @endif
@@ -35,14 +35,18 @@
                                                         <td>
                                 <div class="form-group">
                                     
+                                                                            <a href="{{ route('laragen.admin.test_cars.show', ['testCar250640198' => $item->id]) }}" class="btn btn-secondary">
+                                            {{ trans('global.show') }}
+                                        </a>
                                     
-                                        
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="@route(laragen.admin.test_cars.show, ['testCar239793807' => $item->id])" >                                        </x-laragen::button>
+                                                                            <a href="{{ route('laragen.admin.test_cars.edit', ['testCar250640198' => $item->id]) }}" class="btn btn-secondary">
+                                            {{ trans('global.edit') }}
+                                        </a>
                                     
-                                    
-                                        
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="@route(laragen.admin.test_cars.edit, ['testCar239793807' => $item->id])" >                                        </x-laragen::button>                                    
-                                                                            <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="delete({{ $item->id }})" >                                        </x-laragen::button>                                                                    </div>
+                                                                            <button class="btn btn-danger mr-2" type="submit" wire:click="delete({{ $item->id }})">
+                                            {{ trans('global.delete') }}
+                                        </button>
+                                                                    </div>
                             </td>
                         </tr>
                         @empty
