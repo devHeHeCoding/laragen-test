@@ -3,14 +3,14 @@
         Loading...
     </div>
 
-    <div class="-my-2 -mx-6 overflow-x-auto lg:-mx-8">
+    <div class="-my-2 -mx-6 overflow-x-auto lg:-mx-7">
         <div class="inline-block min-w-full py-2 align-middle px-6 lg:px-8">
             <div class="overflow-hidden shadow rounded">
                 <table class="laragen-table">
                     <thead>
                     <tr>
                                                     <th>
-                                {{ trans('cruds.test-car1975829433.fields.test') }}                            </th>
+                                {{ trans('cruds.test-car457912317.fields.test') }}                            </th>
                             @if(\View::exists('admin.crud-controller.testcontroller.index.test_after_header'))
                                 @includeIf('admin.crud-controller.testcontroller.index.test_after_header')
                                 @endif
@@ -37,11 +37,11 @@
                                     
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.test_cars.show', ['testCar1975829433' => $item->id])}}"></x-laragen::button>
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.test_cars.show', ['testCar457912317' => $item->id])}}"></x-laragen::button>
                                     
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.test_cars.edit', ['testCar1975829433' => $item->id])}}"></x-laragen::button>                                    
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.test_cars.edit', ['testCar457912317' => $item->id])}}"></x-laragen::button>                                    
                                                                             <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="delete({{ $item->id }})"></x-laragen::button>                                                                    </div>
                             </td>
                         </tr>
@@ -52,10 +52,8 @@
                         @endforelse
                     </tbody>
                 </table>
-                <div class="card-body">
-                    <div class="">
-                        {{ $items->links() }}
-                    </div>
+                <div class="mt-3 pagination">
+                        {{ $items->onEachSide(1)->links() }}
                 </div>
             </div>
         </div>
