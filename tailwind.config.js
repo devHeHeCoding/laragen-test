@@ -34,10 +34,28 @@ module.exports = {
                 900: '#831843',
             },
             red: {
-                400: '#B50000'
+                50: '#fef2f2',
+                100: '#fee2e2',
+                200: '#fecaca',
+                300: '#fca5a5',
+                400: '#f87171',
+                500: '#ef4444',
+                600: '#dc2626',
+                700: '#b91c1c',
+                800: '#991b1b',
+                900: '#7f1d1d'
             },
             green: {
-                400: '#00951F'
+                50: '#f0fdf4',
+                100: '#dcfce7',
+                200: '#bbf7d0',
+                300: '#86efac',
+                400: '#4ade80',
+                500: '#22c55e',
+                600: '#16a34a',
+                700: '#15803d',
+                800: '#166534',
+                900: '#14532d'
             },
             orange: {
                 400: '#C07606'
@@ -47,10 +65,11 @@ module.exports = {
             'none': '0',
             'sm': '5px',
             DEFAULT: '10px',
+            'lg': '15px',
             'full': '9999px'
         },
         boxShadow: {
-          DEFAULT: '0px 1px 4px rgba(0, 0, 0, 0.25)'
+            DEFAULT: '0px 1px 4px rgba(0, 0, 0, 0.25)'
         },
         fontFamily: {
             'sans': ['Montserrat', 'system-ui', 'sans-serif'],
@@ -64,21 +83,52 @@ module.exports = {
     safelist: [
         'rounded',
         'rounded-sm',
+        'rounded-lg',
         'px-2.5',
         'py-1.5',
         'py-2',
         'py-3',
+        'ml-2',
+        'mr-2',
+        'mx-1',
+        'my-2',
+        'pl-2',
+        'pr-12',
         'underline',
         'border',
+        'border-b-2',
         'border-transparent',
+        'border-blue-400',
         'hover:border-gray-300',
         'inline-flex',
+        'bg-red-400',
+        'text-red-400',
+        'opacity-90',
+        'text-white',
+        'hover:text-white',
+        'text-xs',
+        'text-sm',
+        'text-lg',
+        'text-xl',
+        'leading-4',
+        'leading-5',
+        'leading-6',
+        'leading-7',
+        'opacity-50',
+        'opacity-90',
+        'cursor-not-allowed',
+        'cursor-pointer',
+        'max-h-64',
+        'right-2',
+        'top-6',
+        'top-4',
+        'flex-wrap',
         {
-            pattern: /bg-(primary|secondary|white|gray)-(100|200|300|400|500|600|700|800|900)/,
+            pattern: /bg-(primary|secondary|white|gray|red|green)-(100|200|300|400|500|600|700|800|900)/,
             variants: ['lg', 'hover', 'focus', 'lg:hover'],
         },
         {
-            pattern: /text-(primary)-(100|200|300|400|500|600|700|800|900)/,
+            pattern: /text-(primary|red|green)-(100|200|300|400|500|600|700|800|900)/,
             variants: ['lg', 'hover', 'focus', 'lg:hover'],
         },
         {

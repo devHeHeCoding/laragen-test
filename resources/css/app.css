@@ -4,6 +4,8 @@
 @import "layout/_sidebar.scss";
 @import "layout/_main.scss";
 @import "components/_form.scss";
+@import "components/_tab.scss";
+@import "components/_table.scss";
 
 @tailwind base;
 @tailwind components;

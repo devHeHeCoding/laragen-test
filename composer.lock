@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "97427e859f35454e3a76b6a61669605e",
+    "content-hash": "81570dd56de650d785acdeb31cc89b42",
     "packages": [
         {
             "name": "brick/math",
@@ -898,16 +898,16 @@
         },
         {
             "name": "hehecoding/laragen-ui-kit",
-            "version": "1.4.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hehecoding/laragen-ui-kit.git",
-                "reference": "e5d59c32b72693c94ecad8ffc50b697b2b8b94c8"
+                "reference": "93c32926eb80df134c8e1848d32e76c425651ad0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hehecoding/laragen-ui-kit/zipball/e5d59c32b72693c94ecad8ffc50b697b2b8b94c8",
-                "reference": "e5d59c32b72693c94ecad8ffc50b697b2b8b94c8",
+                "url": "https://api.github.com/repos/hehecoding/laragen-ui-kit/zipball/93c32926eb80df134c8e1848d32e76c425651ad0",
+                "reference": "93c32926eb80df134c8e1848d32e76c425651ad0",
                 "shasum": ""
             },
             "require": {
@@ -963,9 +963,9 @@
                 "laravel"
             ],
             "support": {
-                "source": "https://github.com/hehecoding/laragen-ui-kit/tree/1.4.0"
+                "source": "https://github.com/hehecoding/laragen-ui-kit/tree/1.6.0"
             },
-            "time": "2023-02-27T14:28:22+00:00"
+            "time": "2023-03-19T15:56:07+00:00"
         },
         {
             "name": "laravel/framework",

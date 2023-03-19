@@ -1,0 +1,20 @@
+.tab-list {
+    @apply relative px-7 flex overflow-x-auto;
+    &:after {
+        content: '';
+        @apply border-b absolute bottom-0 left-0 w-full;
+    }
+
+    &__item {
+        @apply hover:text-blue-400 z-10 relative flex;
+        button {
+            &:hover {
+                @apply border-blue-400;
+            }
+        }
+        &:not(:last-child):after {
+            content: '';
+            @apply w-px m-4 bg-gray-200 inline-block;
+        }
+    }
+}
