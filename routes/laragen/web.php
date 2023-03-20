@@ -5,9 +5,9 @@ Route::name('laragen.')
     ->middleware('web')
     ->group(function () {
 
-                                    Route::get('', [\App\Http\Controllers\TestController::class, 'index'])->name('admin..index');
-                            Route::get('/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin..create');
-                            Route::get('/{testCar1387683857}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin..show');
-                            Route::get('/{testCar1387683857}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin..edit');
+                                    Route::get('test_cars', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.test_cars.index');
+                            Route::get('test_cars/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.test_cars.create');
+                            Route::get('test_cars/{testCar2069782875}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.test_cars.show');
+                            Route::get('test_cars/{testCar2069782875}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.test_cars.edit');
                     
     });
