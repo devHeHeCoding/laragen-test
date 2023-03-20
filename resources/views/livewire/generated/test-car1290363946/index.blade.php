@@ -10,7 +10,7 @@
                     <thead>
                     <tr>
                                                     <th>
-                                {{ trans('cruds.test-car1122180325.fields.test') }}                            </th>
+                                {{ trans('cruds.test-car1290363946.fields.test') }}                            </th>
                             @if(\View::exists('admin.crud-controller.testcontroller.index.test_after_header'))
                                 @includeIf('admin.crud-controller.testcontroller.index.test_after_header')
                                 @endif
@@ -37,11 +37,11 @@
                                     
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.test_cars.show', ['testCar1122180325' => $item->id])}}"></x-laragen::button>
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.test_cars.show', ['testCar1290363946' => $item->id])}}"></x-laragen::button>
                                     
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.test_cars.edit', ['testCar1122180325' => $item->id])}}"></x-laragen::button>                                    
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.test_cars.edit', ['testCar1290363946' => $item->id])}}"></x-laragen::button>                                    
                                                                             <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="delete({{ $item->id }})"></x-laragen::button>                                                                    </div>
                             </td>
                         </tr>
@@ -52,9 +52,9 @@
                         @endforelse
                     </tbody>
                 </table>
-                <div class="mt-3 pagination">
-                        {{ $items->onEachSide(1)->links() }}
-                </div>
+            </div>
+            <div class="mt-5 pagination">
+                {{ $items->onEachSide(1)->links() }}
             </div>
         </div>
     </div>
