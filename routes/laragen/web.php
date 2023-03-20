@@ -5,9 +5,9 @@ Route::name('laragen.')
     ->middleware('web')
     ->group(function () {
 
-                                    Route::get('', [\App\Http\Controllers\TestController::class, 'index'])->name('admin..index');
-                            Route::get('/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin..create');
-                            Route::get('/{testCar1590696408}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin..show');
-                            Route::get('/{testCar1590696408}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin..edit');
+                                    Route::get('sint', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.sint.index');
+                            Route::get('sint/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.sint.create');
+                            Route::get('sint/{testCar646393988}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.sint.show');
+                            Route::get('sint/{testCar646393988}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.sint.edit');
                     
     });
