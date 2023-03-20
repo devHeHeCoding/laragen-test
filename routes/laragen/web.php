@@ -5,9 +5,9 @@ Route::name('laragen.')
     ->middleware('web')
     ->group(function () {
 
-                                    Route::get('soluta', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.soluta.index');
-                            Route::get('soluta/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.soluta.create');
-                            Route::get('soluta/{testCar1186187951}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.soluta.show');
-                            Route::get('soluta/{testCar1186187951}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.soluta.edit');
+                                    Route::get('velit', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.velit.index');
+                            Route::get('velit/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.velit.create');
+                            Route::get('velit/{testCar1122180325}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.velit.show');
+                            Route::get('velit/{testCar1122180325}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.velit.edit');
                     
     });
