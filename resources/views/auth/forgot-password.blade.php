@@ -29,9 +29,9 @@
 
 
             <div class="flex items-center justify-end mt-4">
-                <x-laragen::link href="{{ route('login.show') }}" color="link" class="mr-2">
+                <x-laragen::button href="{{ route('login.show') }}" variant="text" class="mr-2">
                     {{ __('Login') }}
-                </x-laragen::link>
+                </x-laragen::button>
 
                 <x-laragen::button>
                     {{ __('Email Password Reset Link') }}

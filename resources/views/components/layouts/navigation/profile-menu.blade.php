@@ -16,8 +16,8 @@
          x-transition:leave-end="opacity-0 scale-95"
          class="profile-menu__dropdown"
          role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-        <x-laragen::form action="{{route('logout')}}">
-            <x-laragen::button class="w-full text-left">
+        <x-laragen::form method="DELETE" action="{{route('logout')}}">
+            <x-laragen::button role="menuitem" tabindex="-1" block variant="plain">
                 Sign out
             </x-laragen::button>
         </x-laragen::form>

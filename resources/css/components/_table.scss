@@ -29,3 +29,21 @@
         }
     }
 }
+
+.pagination {
+    button {
+        &:hover {
+            @apply bg-gray-100;
+        }
+    }
+    span[aria-current="page"] {
+        span {
+            @apply bg-primary-400 text-white;
+        }
+    }
+    span[aria-disabled="true"] {
+        span {
+            @apply opacity-30;
+        }
+    }
+}
