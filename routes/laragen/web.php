@@ -5,9 +5,9 @@ Route::name('laragen.')
     ->middleware('web')
     ->group(function () {
 
-                                    Route::get('ducimus', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.ducimus.index');
-                            Route::get('ducimus/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.ducimus.create');
-                            Route::get('ducimus/{testCar1400970972}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.ducimus.show');
-                            Route::get('ducimus/{testCar1400970972}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.ducimus.edit');
+                                    Route::get('nobis', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.nobis.index');
+                            Route::get('nobis/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.nobis.create');
+                            Route::get('nobis/{testCar1172135082}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.nobis.show');
+                            Route::get('nobis/{testCar1172135082}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.nobis.edit');
                     
     });
