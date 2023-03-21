@@ -5,9 +5,9 @@ Route::name('laragen.')
     ->middleware('web')
     ->group(function () {
 
-                                    Route::get('', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.autem.index');
-                            Route::get('/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.autem.create');
-                            Route::get('/{testCar2114917132}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.autem.show');
-                            Route::get('/{testCar2114917132}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.autem.edit');
+                                    Route::get('', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.veniam.index');
+                            Route::get('/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.veniam.create');
+                            Route::get('/{testCar330993769}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.veniam.show');
+                            Route::get('/{testCar330993769}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.veniam.edit');
                     
     });
