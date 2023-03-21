@@ -5,9 +5,9 @@ Route::name('laragen.')
     ->middleware('web')
     ->group(function () {
 
-                                    Route::get('voluptas', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.voluptas.index');
-                            Route::get('voluptas/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.voluptas.create');
-                            Route::get('voluptas/{testCar1296106034}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.voluptas.show');
-                            Route::get('voluptas/{testCar1296106034}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.voluptas.edit');
+                                    Route::get('consequatur', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.consequatur.index');
+                            Route::get('consequatur/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.consequatur.create');
+                            Route::get('consequatur/{testCar689738376}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.consequatur.show');
+                            Route::get('consequatur/{testCar689738376}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.consequatur.edit');
                     
     });
