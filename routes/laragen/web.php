@@ -5,9 +5,9 @@ Route::name('laragen.')
     ->middleware('web')
     ->group(function () {
 
-                                    Route::get('nobis', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.nobis.index');
-                            Route::get('nobis/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.nobis.create');
-                            Route::get('nobis/{testCar1172135082}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.nobis.show');
-                            Route::get('nobis/{testCar1172135082}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.nobis.edit');
+                                    Route::get('', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.ut.index');
+                            Route::get('/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.ut.create');
+                            Route::get('/{testCar172364925}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.ut.show');
+                            Route::get('/{testCar172364925}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.ut.edit');
                     
     });
