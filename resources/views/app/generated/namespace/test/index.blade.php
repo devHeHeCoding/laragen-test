@@ -1,6 +1,6 @@
 <x-layouts.app>
     <x-slot:title>        <h1>
-            {{ trans('cruds.test-car547282329.title_multiple') }}        </h1>
+            {{ trans('cruds.test-car612343464.title_multiple') }}        </h1>
     </x-slot:title>
 
     <x-slot:headerActions>                <x-laragen::button href="{{ route('laragen.admin.route.prefix.create') }}">            {{ trans('global.create') }}
