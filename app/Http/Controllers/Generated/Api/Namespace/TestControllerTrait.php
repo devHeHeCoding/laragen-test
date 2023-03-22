@@ -1,5 +1,5 @@
 <?php
-namespace App\Http\Controllers\GeneratedTraits\Api;
+namespace App\Http\Controllers\Generated\Api\Namespace;
 
 trait TestControllerTrait
 {
