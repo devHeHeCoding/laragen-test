@@ -15,10 +15,10 @@
         
         <div class="flex-1 -mx-2">
                                             @includeFirst([
-                            'app.namespace.test.fields.create.serenity_kohler_id',
-                            'app.generated.namespace.test.fields.create.serenity_kohler_id'
+                            'app.namespace.test.fields.create.prof._derrick_rice_id',
+                            'app.generated.namespace.test.fields.create.prof._derrick_rice_id'
                         ])
-                @includeIf('app.namespace.test.fields.create.serenity_kohler_id_after')
+                @includeIf('app.namespace.test.fields.create.prof._derrick_rice_id_after')
                     </div>
     </fieldset>
 
