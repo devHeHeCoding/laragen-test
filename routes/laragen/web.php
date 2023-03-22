@@ -5,9 +5,9 @@ Route::name('laragen.')
     ->middleware('web')
     ->group(function () {
 
-                                    Route::get('', [\App\Http\Controllers\TestController::class, 'index'])->name('admin.dolorum.index');
-                            Route::get('/create', [\App\Http\Controllers\TestController::class, 'create'])->name('admin.dolorum.create');
-                            Route::get('/{testCar1183076443}', [\App\Http\Controllers\TestController::class, 'show'])->name('admin.dolorum.show');
-                            Route::get('/{testCar1183076443}/edit', [\App\Http\Controllers\TestController::class, 'edit'])->name('admin.dolorum.edit');
+                                    Route::get('route/prefix', [\App\Http\Controllers\Namespace\TestController::class, 'index'])->name('admin.route.prefix.index');
+                            Route::get('route/prefix/create', [\App\Http\Controllers\Namespace\TestController::class, 'create'])->name('admin.route.prefix.create');
+                            Route::get('route/prefix/{testCar1520283344}', [\App\Http\Controllers\Namespace\TestController::class, 'show'])->name('admin.route.prefix.show');
+                            Route::get('route/prefix/{testCar1520283344}/edit', [\App\Http\Controllers\Namespace\TestController::class, 'edit'])->name('admin.route.prefix.edit');
                     
     });
