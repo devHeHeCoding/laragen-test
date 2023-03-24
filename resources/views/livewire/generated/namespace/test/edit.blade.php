@@ -14,9 +14,10 @@
     <div class="form-group">
         <button class="btn btn-indigo mr-2" type="submit">
             {{ trans('global.save') }}        </button>
-                <a href="{{ route('laragen.admin.test_cars.index') }}" class="btn btn-secondary">
+                <a href="{{ route('laragen.admin.route.prefix.index') }}" class="btn btn-secondary">
             {{ trans('global.cancel') }}
         </a>
     </div>
 
 </x-laragen::form>
+@includeIf('app.namespace.test.edit.footer')
