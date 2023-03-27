@@ -10,7 +10,7 @@
                     <thead>
                     <tr>
                                                     <th>
-                                {{ trans('cruds.test-car1143230389.fields.test') }}                            </th>
+                                {{ trans('cruds.test-car1833462744.fields.test') }}                            </th>
                             @if(\View::exists('app.namespace.test.index.test_after_header'))
                                 @includeIf('app.namespace.test.index.test_after_header')
                                 @endif
@@ -37,11 +37,11 @@
                                     
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar1143230389' => $item->id]) }}"></x-laragen::button>
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar1833462744' => $item->id]) }}"></x-laragen::button>
                                     
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar1143230389' => $item->id]) }}"></x-laragen::button>                                    
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar1833462744' => $item->id]) }}"></x-laragen::button>                                    
                                                                             <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="delete({{ $item->id }})"></x-laragen::button>                                                                    </div>
                             </td>
                         </tr>
