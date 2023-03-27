@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers\Generated\Namespace;
 
-use App\Models\TestCar1565904194;
+use App\Models\TestCar1143230389;
 use Illuminate\Support\Facades\View;
 
 /**
@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\View;
 */
 trait TestControllerTrait
 {
-    public function index()
+    public function index(): View
     {
         if (View::exists('app.namespace.test.index')) {
             return view('app.namespace.test.index');
@@ -18,7 +18,7 @@ trait TestControllerTrait
         return view('app.generated.namespace.test.index');
     }
 
-    public function create()
+    public function create(): View
     {
         if (View::exists('app.generated.namespace.test.create')) {
             return view('app.generated.namespace.test.create');
@@ -27,21 +27,21 @@ trait TestControllerTrait
         return view('app.generated.namespace.test.create');
     }
 
-    public function edit(TestCar1565904194 $testCar1565904194)
+    public function edit(TestCar1143230389 $testCar1143230389): View
     {
         if (View::exists('app.namespace.test.edit')) {
-            return view('app.namespace.test.edit', compact('testCar1565904194'));
+            return view('app.namespace.test.edit', compact('testCar1143230389'));
         }
 
-        return view('app.generated.namespace.test.edit', compact('testCar1565904194'));
+        return view('app.generated.namespace.test.edit', compact('testCar1143230389'));
     }
 
-    public function show(TestCar1565904194 $testCar1565904194)
+    public function show(TestCar1143230389 $testCar1143230389): View
     {
         if (View::exists('app.generated.namespace.test.show')) {
-            return view('app.generated.namespace.test.show', compact('testCar1565904194'));
+            return view('app.generated.namespace.test.show', compact('testCar1143230389'));
         }
 
-        return view('app.generated.namespace.test.show', compact('testCar1565904194'));
+        return view('app.generated.namespace.test.show', compact('testCar1143230389'));
     }
 }
