@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers\Generated\Namespace;
 
-use App\Models\TestCar342557351;
+use App\Models\TestCar983603531;
 use Illuminate\Support\Facades\View;
 
 /**
@@ -27,21 +27,21 @@ trait TestControllerTrait
         return view('app.generated.namespace.test.create');
     }
 
-    public function edit(TestCar342557351 $testCar342557351): View
+    public function edit(TestCar983603531 $testCar983603531): View
     {
         if (View::exists('app.namespace.test.edit')) {
-            return view('app.namespace.test.edit', compact('testCar342557351'));
+            return view('app.namespace.test.edit', compact('testCar983603531'));
         }
 
-        return view('app.generated.namespace.test.edit', compact('testCar342557351'));
+        return view('app.generated.namespace.test.edit', compact('testCar983603531'));
     }
 
-    public function show(TestCar342557351 $testCar342557351): View
+    public function show(TestCar983603531 $testCar983603531): View
     {
         if (View::exists('app.generated.namespace.test.show')) {
-            return view('app.generated.namespace.test.show', compact('testCar342557351'));
+            return view('app.generated.namespace.test.show', compact('testCar983603531'));
         }
 
-        return view('app.generated.namespace.test.show', compact('testCar342557351'));
+        return view('app.generated.namespace.test.show', compact('testCar983603531'));
     }
 }
