@@ -8,7 +8,7 @@ trait TestControllerTrait
 {
     public function index()
     {
-         return TestCar957666109::paginate();
+         return TestCar47779518::paginate();
     }
 
     public function create()
@@ -16,19 +16,19 @@ trait TestControllerTrait
         return response()->noContent();
     }
 
-    public function edit(TestCar957666109 $testCar957666109)
+    public function edit(TestCar47779518 $testCar47779518)
     {
         return response()->noContent();
     }
 
-    public function show(TestCar957666109 $testCar957666109)
+    public function show(TestCar47779518 $testCar47779518)
     {
-        return  $testCar957666109;
+        return  $testCar47779518;
     }
 
-    public function destroy(TestCar957666109 $testCar957666109)
+    public function destroy(TestCar47779518 $testCar47779518)
     {
-        $testCar957666109->delete();
+        $testCar47779518->delete();
         return response()->noContent();
     }
 }
