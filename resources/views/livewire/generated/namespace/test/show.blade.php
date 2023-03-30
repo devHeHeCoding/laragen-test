@@ -4,7 +4,7 @@
         <table class="w-full show-table">
                                             <tr>
                     <th class="text-left">
-                        {{ trans('cruds.test-car47779518.fields.test') }}                    </th>
+                        {{ trans('cruds.test-car1153574605.fields.test') }}                    </th>
                     <td>
 
                         @includeFirst(
