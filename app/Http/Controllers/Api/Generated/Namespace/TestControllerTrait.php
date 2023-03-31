@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers\Api\Generated\Namespace;
 
-use App\Models\TestCar1299154322;
+use App\Models\TestCar1764321535;
 use App\Http\Resources\GenericResource;
 
 /**
@@ -9,11 +9,11 @@ use App\Http\Resources\GenericResource;
 */
 trait TestControllerTrait
 {
-    public string $resourceToUse = GenericResource::class
+    public string $resourceToUse = GenericResource::class;
 
     public function index()
     {
-        $models = TestCar1299154322::paginate();
+        $models = TestCar1764321535::paginate();
 
         return $this->resourceToUse::collection($models);
     }
@@ -23,19 +23,19 @@ trait TestControllerTrait
         return response()->noContent();
     }
 
-    public function edit(TestCar1299154322 $testCar1299154322)
+    public function edit(TestCar1764321535 $testCar1764321535)
     {
         return response()->noContent();
     }
 
-    public function show(TestCar1299154322 $testCar1299154322)
+    public function show(TestCar1764321535 $testCar1764321535)
     {
-        return new $this->resourceToUse($testCar1299154322);
+        return new $this->resourceToUse($testCar1764321535);
     }
 
-    public function destroy(TestCar1299154322 $testCar1299154322)
+    public function destroy(TestCar1764321535 $testCar1764321535)
     {
-        $testCar1299154322->delete();
+        $testCar1764321535->delete();
         return response()->noContent();
     }
 }
