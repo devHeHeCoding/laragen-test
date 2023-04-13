@@ -9,8 +9,9 @@
                 <table class="laragen-table">
                     <thead>
                     <tr>
-                                                    <th>
-                                {{ trans('cruds.test-car1193733269.fields.test') }}                            </th>
+                                                    @includeIf('app.namespace.test.index.test_before_header')
+                            <th>
+                                {{ trans('cruds.test-car1542014095.fields.test') }}                            </th>
                             @includeIf('app.namespace.test.index.test_after_header')
                                                 <th style="width: 120px">{{ trans('global.actions') }}</th>
                     </tr>
@@ -18,7 +19,8 @@
                     <tbody>
                     @forelse($items as $item)
                         <tr>
-                                                            <td>
+                                                            @includeIf('app.namespace.test.fields.index.test_before_column')
+                                <td>
                                     @includeFirst(
                                         [
                                             'app.namespace.test.fields.index.test',
@@ -27,7 +29,7 @@
                                     )
                                     @includeIf('app.namespace.test.fields.index.test_after')
                                 </td>
-                                    @includeIf('app.namespace.test.fields.index.test_after_column')
+                                @includeIf('app.namespace.test.fields.index.test_after_column')
                                                         <td>
                                 <div class="form-group">
                                     
@@ -35,11 +37,11 @@
 
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar1193733269' => $item->id]) }}"></x-laragen::button>
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar1542014095' => $item->id]) }}"></x-laragen::button>
                                     
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar1193733269' => $item->id]) }}"></x-laragen::button>                                    
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar1542014095' => $item->id]) }}"></x-laragen::button>                                    
                                                                             <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="delete({{ $item->id }})"></x-laragen::button>                                    
                                     @endif
                                     @includeIf('app.namespace.test.index.actions')
