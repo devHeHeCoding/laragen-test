@@ -1,4 +1,4 @@
-<x-laragen::form wire:submit.prevent="submit" class="pt-3">
+<x-laragen::form wire:submit.prevent="submit" class="pb-7 bg-white shadow rounded px-7">
                                         @includeIf('app.namespace.test.create.fieldset.6.before')
         <fieldset>
 
@@ -22,12 +22,12 @@
             
             <div class="flex-1 -mx-2">
                 @includeIf('app.namespace.test.create.fieldset.7.content_before')
-                                    @includeIf('app.namespace.test.fields.create.mrs._loma_gleason_id_before')
+                                    @includeIf('app.namespace.test.fields.create.mr._bruce_feil_id_before')
                     @includeFirst([
-                                'app.namespace.test.fields.create.mrs._loma_gleason_id',
-                                'app.generated.namespace.test.fields.create.mrs._loma_gleason_id'
+                                'app.namespace.test.fields.create.mr._bruce_feil_id',
+                                'app.generated.namespace.test.fields.create.mr._bruce_feil_id'
                             ])
-                    @includeIf('app.namespace.test.fields.create.mrs._loma_gleason_id_after')
+                    @includeIf('app.namespace.test.fields.create.mr._bruce_feil_id_after')
                                 @includeIf('app.namespace.test.create.fieldset.7.content_after')
             </div>
 

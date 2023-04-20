@@ -1,4 +1,4 @@
-<x-laragen::form wire:submit.prevent="submit" class="pt-3">                    @includeIf('app.namespace.test.edit.fieldset.5.before')
+<x-laragen::form wire:submit.prevent="submit" class="pb-7 bg-white shadow rounded px-7">                    @includeIf('app.namespace.test.edit.fieldset.5.before')
         <fieldset>
 
             
