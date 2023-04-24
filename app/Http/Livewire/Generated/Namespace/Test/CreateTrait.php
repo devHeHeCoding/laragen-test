@@ -1,8 +1,8 @@
 <?php
 namespace App\Http\Livewire\Generated\Namespace\Test;
 
-use App\Models\TestCar1627959592;
-use App\Models\TestCar21916254943;
+use App\Models\TestCar116954758;
+use App\Models\TestCar2730417778;
         use Illuminate\Database\Eloquent\Collection;
 
 /**
@@ -12,12 +12,12 @@ use App\Models\TestCar21916254943;
 */
 trait CreateTrait
 {
-    public TestCar1627959592 $testCar1627959592;
+    public TestCar116954758 $testCar116954758;
 
                         
-    public function mount(TestCar1627959592 $testCar1627959592)
+    public function mount(TestCar116954758 $testCar116954758)
     {
-        $this->testCar1627959592 = $testCar1627959592;
+        $this->testCar116954758 = $testCar116954758;
                                             }
 
     public function render()
@@ -29,18 +29,22 @@ trait CreateTrait
     {
         $this->validate();
 
-        $this->testCar1627959592->save();
-                            
+        $this->testCar116954758->save();
+                    $this->testCar116954758
+                ->test_cars_2
+                ->sync($this->selectedTestCars2)
+            ;
+        
         return redirect()->route('laragen.admin.route.prefix.index');
     }
 
     public function rules(): array
     {
         return [
-                                                                    'testCar1627959592.test' => [
+                                                                    'testCar116954758.test' => [
                                                                                     'required','string'
                                 ],
-                                                                    'testCar1627959592.brain_shanahan_id' => [
+                                                                    'testCar116954758.thad_mraz_i_i_i_id' => [
                                                                                     'required','string'
                                 ],
                     ];
