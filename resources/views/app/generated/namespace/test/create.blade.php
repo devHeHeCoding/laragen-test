@@ -1,7 +1,7 @@
 <x-layouts.app>
 
     <x-slot:title>        <h1>
-            {{ trans('global.create') }}            {{ trans('cruds.test-car116954758.title_singular') }}        </h1>
+            {{ trans('global.create') }}            {{ trans('cruds.test-car974755813.title_singular') }}        </h1>
     </x-slot:title>
     @livewire('app.namespace.test.create')
 
