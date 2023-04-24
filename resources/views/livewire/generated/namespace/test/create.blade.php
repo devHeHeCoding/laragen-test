@@ -22,12 +22,12 @@
             
             <div class="flex-1 -mx-2">
                 @includeIf('app.namespace.test.create.fieldset.7.content_before')
-                                    @includeIf('app.namespace.test.fields.create.dr._jessica_o&#039;_connell_i_i_id_before')
+                                    @includeIf('app.namespace.test.fields.create.prof._finn_kuhic_id_before')
                     @includeFirst([
-                                'app.namespace.test.fields.create.dr._jessica_o&#039;_connell_i_i_id',
-                                'app.generated.namespace.test.fields.create.dr._jessica_o&#039;_connell_i_i_id'
+                                'app.namespace.test.fields.create.prof._finn_kuhic_id',
+                                'app.generated.namespace.test.fields.create.prof._finn_kuhic_id'
                             ])
-                    @includeIf('app.namespace.test.fields.create.dr._jessica_o&#039;_connell_i_i_id_after')
+                    @includeIf('app.namespace.test.fields.create.prof._finn_kuhic_id_after')
                                 @includeIf('app.namespace.test.create.fieldset.7.content_after')
             </div>
 
