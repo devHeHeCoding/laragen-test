@@ -1,18 +1,18 @@
 <?php
 return [
-    'test-car632556571' => [
-        'title_singular' => 'Test Car632556571',
-        'title_multiple' => 'Test Car632556571S',
+    'test-car1126427991' => [
+        'title_singular' => 'Test Car1126427991',
+        'title_multiple' => 'Test Car1126427991S',
         'fields' => [
                     'test' => 'Test',
                 'test_helper' => '',
-                    'has_many_relation' => 'Test Car2519978279S',
+                    'has_many_relation' => 'Test Car21953143345S',
                 'has_many_relation_helper' => '',
                     ],
     ],
-    'test-car2519978279' => [
-        'title_singular' => 'Test Car2519978279',
-        'title_multiple' => 'Test Car2519978279S',
+    'test-car21953143345' => [
+        'title_singular' => 'Test Car21953143345',
+        'title_multiple' => 'Test Car21953143345S',
         'fields' => [
                     ],
     ],
