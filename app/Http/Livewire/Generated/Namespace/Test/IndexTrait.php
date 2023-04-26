@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Livewire\Generated\Namespace\Test;
 
-use App\Models\TestCar1356840045;
+use App\Models\TestCar1044297656;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Redirector;
 
@@ -26,17 +26,17 @@ trait IndexTrait
 
     protected function getQuery(): \Illuminate\Contracts\Pagination\LengthAwarePaginator
     {
-        return TestCar1356840045::paginate($this->perPage);
+        return TestCar1044297656::paginate($this->perPage);
     }
 
-            public function delete(TestCar1356840045 $testCar1356840045)
+            public function delete(TestCar1044297656 $testCar1044297656): null|Redirector|RedirectResponse
         {
-                                                if ($testCar1356840045->testCar21867827096s()->count() > 0) {
+                                                if ($testCar1044297656->testCar21031968091s()->count() > 0) {
                         $this->emit('deleteNotAllowed');
                         return;
                     }
                             
-            $testCar1356840045->delete();
+            $testCar1044297656->delete();
 
         $items = $this->getQuery();
 
@@ -44,5 +44,7 @@ trait IndexTrait
             $lastPage = $items->lastPage();
             return redirect()->route('laragen.admin.route.prefix.index', ['page' => $lastPage]);
         }
+
+        return null;
         }
     }
