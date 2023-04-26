@@ -11,7 +11,7 @@
                     <tr>
                                                     @includeIf('app.namespace.test.index.test_before_header')
                             <th>
-                                {{ trans('cruds.test-car1409118617.fields.test') }}                            </th>
+                                {{ trans('cruds.test-car1969785309.fields.test') }}                            </th>
                             @includeIf('app.namespace.test.index.test_after_header')
                                                 <th style="width: 120px">{{ trans('global.actions') }}</th>
                     </tr>
@@ -37,11 +37,11 @@
 
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar1409118617' => $item->id]) }}"></x-laragen::button>
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar1969785309' => $item->id]) }}"></x-laragen::button>
                                     
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar1409118617' => $item->id]) }}"></x-laragen::button>                                    
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar1969785309' => $item->id]) }}"></x-laragen::button>                                    
                                                                                 <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="confirm('delete', {{ $item->id }})"></x-laragen::button>                                    
                                     @endif
                                     @includeIf('app.namespace.test.index.actions')
