@@ -2,8 +2,8 @@
 
     <x-slot:title>    <h1>
         {{ trans('global.edit') }}
-        {{ trans('cruds.test-car172553734.title_singular') }}    </h1>
+        {{ trans('cruds.test-car887430344.title_singular') }}    </h1>
     </x-slot:title>
-    @livewire('app.namespace.test.edit', ['testCar172553734' => $testCar172553734])
+    @livewire('app.namespace.test.edit', ['testCar887430344' => $testCar887430344])
 
 </x-layouts.app>
