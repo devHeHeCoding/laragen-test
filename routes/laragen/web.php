@@ -7,7 +7,7 @@ Route::name('laragen.')
 
                                     Route::get('route/prefix', [\App\Http\Controllers\Namespace\TestController::class, 'index'])->name('admin.route.prefix.index');
                             Route::get('route/prefix/create', [\App\Http\Controllers\Namespace\TestController::class, 'create'])->name('admin.route.prefix.create');
-                            Route::get('route/prefix/{testCar1676258798}', [\App\Http\Controllers\Namespace\TestController::class, 'show'])->name('admin.route.prefix.show');
-                            Route::get('route/prefix/{testCar1676258798}/edit', [\App\Http\Controllers\Namespace\TestController::class, 'edit'])->name('admin.route.prefix.edit');
+                            Route::get('route/prefix/{testCar1930031546}', [\App\Http\Controllers\Namespace\TestController::class, 'show'])->name('admin.route.prefix.show');
+                            Route::get('route/prefix/{testCar1930031546}/edit', [\App\Http\Controllers\Namespace\TestController::class, 'edit'])->name('admin.route.prefix.edit');
                     
     });
