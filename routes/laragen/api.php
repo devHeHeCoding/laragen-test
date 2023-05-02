@@ -7,8 +7,8 @@ Route::name('laragen-api.')
 
                                     Route::get('route/prefix', [\App\Http\Controllers\Api\Namespace\TestController::class, 'index'])->name('route.prefix.index');
                             Route::post('route/prefix', [\App\Http\Controllers\Api\Namespace\TestController::class, 'store'])->name('route.prefix.store');
-                            Route::get('route/prefix/{testCar1265047689}', [\App\Http\Controllers\Api\Namespace\TestController::class, 'show'])->name('route.prefix.show');
-                            Route::patch('route/prefix/{testCar1265047689}', [\App\Http\Controllers\Api\Namespace\TestController::class, 'update'])->name('route.prefix.update');
-                            Route::delete('route/prefix/{testCar1265047689}', [\App\Http\Controllers\Api\Namespace\TestController::class, 'destroy'])->name('route.prefix.destroy');
+                            Route::get('route/prefix/{testCar1711891965}', [\App\Http\Controllers\Api\Namespace\TestController::class, 'show'])->name('route.prefix.show');
+                            Route::patch('route/prefix/{testCar1711891965}', [\App\Http\Controllers\Api\Namespace\TestController::class, 'update'])->name('route.prefix.update');
+                            Route::delete('route/prefix/{testCar1711891965}', [\App\Http\Controllers\Api\Namespace\TestController::class, 'destroy'])->name('route.prefix.destroy');
                     
     });
