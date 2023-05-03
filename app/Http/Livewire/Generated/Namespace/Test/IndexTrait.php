@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Livewire\Generated\Namespace\Test;
 
-use App\Models\TestCar1912821942;
+use App\Models\TestCar515234683;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Redirector;
 
@@ -26,21 +26,21 @@ trait IndexTrait
 
     protected function getQuery(): \Illuminate\Contracts\Pagination\LengthAwarePaginator
     {
-        return TestCar1912821942::paginate($this->perPage);
+        return TestCar515234683::paginate($this->perPage);
     }
 
-            public function delete(TestCar1912821942 $testCar1912821942): null|Redirector|RedirectResponse
+            public function delete(TestCar515234683 $testCar515234683): null|Redirector|RedirectResponse
         {
-                                                if ($testCar1912821942->testCar21305148407s()->count() > 0) {
+                                                if ($testCar515234683->testCar21037281140s()->count() > 0) {
                         $this->emit('deleteNotAllowed',
-                            'TestCar1912821942 cannot be deleted.
-                            Has testCar21305148407s: ('. $testCar1912821942->testCar21305148407s()->count() .')'
+                            'TestCar515234683 cannot be deleted.
+                            Has testCar21037281140s: ('. $testCar515234683->testCar21037281140s()->count() .')'
                         );
 
                         return null;
                     }
                             
-            $testCar1912821942->delete();
+            $testCar515234683->delete();
 
         $items = $this->getQuery();
 
