@@ -1,19 +1,33 @@
 <?php
 return [
-    'test-car1911260058' => [
-        'title_singular' => 'Test Car1911260058',
-        'title_multiple' => 'Test Car1911260058S',
+    'test-car749485583' => [
+        'title_singular' => 'Test Car749485583',
+        'title_multiple' => 'Test Car749485583S',
         'fields' => [
                     'test' => 'Test',
                 'test_helper' => '',
-                    'has_many_relation' => 'Test Car21052578242S',
+                    'has_many_relation' => 'Test Car2222305517S',
                 'has_many_relation_helper' => '',
                     ],
     ],
-    'test-car21052578242' => [
-        'title_singular' => 'Test Car21052578242',
-        'title_multiple' => 'Test Car21052578242S',
+    'test-car2222305517' => [
+        'title_singular' => 'Test Car2222305517',
+        'title_multiple' => 'Test Car2222305517S',
         'fields' => [
                     ],
     ],
+    'crud_controllers_fieldsets' => [
+                    default-fieldset-5 => [
+                'title' => 'Default fieldset',
+                'description' => '',
+            ],
+                    ms => [
+                'title' => 'Ms.',
+                'description' => 'description',
+            ],
+                    mrs => [
+                'title' => 'Mrs.',
+                'description' => 'description',
+            ],
+            ],
 ];
