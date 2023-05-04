@@ -16,23 +16,23 @@
 
         </fieldset>
         @includeIf('app.namespace.test.create.fieldset.miss.after')
-                    @includeIf('app.namespace.test.create.fieldset.miss-2.before')
+                    @includeIf('app.namespace.test.create.fieldset.mr.before')
         <fieldset>
 
             
             <div class="flex-1 -mx-2">
-                @includeIf('app.namespace.test.create.fieldset.miss-2.content_before')
-                                    @includeIf('app.namespace.test.fields.create.miss_cordia_tillman_v_id_before')
+                @includeIf('app.namespace.test.create.fieldset.mr.content_before')
+                                    @includeIf('app.namespace.test.fields.create.brody_gibson_id_before')
                     @includeFirst([
-                                'app.namespace.test.fields.create.miss_cordia_tillman_v_id',
-                                'app.generated.namespace.test.fields.create.miss_cordia_tillman_v_id'
+                                'app.namespace.test.fields.create.brody_gibson_id',
+                                'app.generated.namespace.test.fields.create.brody_gibson_id'
                             ])
-                    @includeIf('app.namespace.test.fields.create.miss_cordia_tillman_v_id_after')
-                                @includeIf('app.namespace.test.create.fieldset.miss-2.content_after')
+                    @includeIf('app.namespace.test.fields.create.brody_gibson_id_after')
+                                @includeIf('app.namespace.test.create.fieldset.mr.content_after')
             </div>
 
         </fieldset>
-        @includeIf('app.namespace.test.create.fieldset.miss-2.after')
+        @includeIf('app.namespace.test.create.fieldset.mr.after')
     
     <div class="form-group">
 
