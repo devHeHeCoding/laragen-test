@@ -5,11 +5,11 @@
         <h1>
 
             {{ trans('global.show') }}
-            {{ trans('cruds.test-car14444972.title_singular') }}
+            {{ trans('cruds.test-car280043231.title_singular') }}
         </h1>
 
     </x-slot:title>
 
-    @livewire('app.namespace.test.show', ['testCar14444972' => $testCar14444972])
+    @livewire('app.namespace.test.show', ['testCar280043231' => $testCar280043231])
 
 </x-layouts.app>

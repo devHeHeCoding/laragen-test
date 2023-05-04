@@ -10,8 +10,8 @@
         <ul :hidden="!isOpen">
                             <li>
         <a href="" class="sidebar__wrapper-menu-item {{request()->routeIs('') ? 'active' : ''}}">
-            <i class="Omnis rem. sidebar__wrapper-menu-item-icon"></i>
-            <span class="sidebar__wrapper-menu-item-title">Prof.</span>
+            <i class="Odio. sidebar__wrapper-menu-item-icon"></i>
+            <span class="sidebar__wrapper-menu-item-title">Miss</span>
         </a>
     </li>
                     </ul>
