@@ -1,38 +1,38 @@
 <x-laragen::form wire:submit.prevent="submit" class="pb-7 bg-white shadow rounded px-7">
-                                        @includeIf('app.namespace.test.create.fieldset.mr.before')
+                                        @includeIf('app.namespace.test.create.fieldset.ms.before')
         <fieldset>
 
             
             <div class="flex-1 -mx-2">
-                @includeIf('app.namespace.test.create.fieldset.mr.content_before')
+                @includeIf('app.namespace.test.create.fieldset.ms.content_before')
                                     @includeIf('app.namespace.test.fields.create.test_before')
                     @includeFirst([
                                 'app.namespace.test.fields.create.test',
                                 'app.generated.namespace.test.fields.create.test'
                             ])
                     @includeIf('app.namespace.test.fields.create.test_after')
-                                @includeIf('app.namespace.test.create.fieldset.mr.content_after')
+                                @includeIf('app.namespace.test.create.fieldset.ms.content_after')
             </div>
 
         </fieldset>
-        @includeIf('app.namespace.test.create.fieldset.mr.after')
-                    @includeIf('app.namespace.test.create.fieldset.mr-2.before')
+        @includeIf('app.namespace.test.create.fieldset.ms.after')
+                    @includeIf('app.namespace.test.create.fieldset.prof.before')
         <fieldset>
 
             
             <div class="flex-1 -mx-2">
-                @includeIf('app.namespace.test.create.fieldset.mr-2.content_before')
-                                    @includeIf('app.namespace.test.fields.create.dr._prince_gorczany_id_before')
+                @includeIf('app.namespace.test.create.fieldset.prof.content_before')
+                                    @includeIf('app.namespace.test.fields.create.elenor_keeling_id_before')
                     @includeFirst([
-                                'app.namespace.test.fields.create.dr._prince_gorczany_id',
-                                'app.generated.namespace.test.fields.create.dr._prince_gorczany_id'
+                                'app.namespace.test.fields.create.elenor_keeling_id',
+                                'app.generated.namespace.test.fields.create.elenor_keeling_id'
                             ])
-                    @includeIf('app.namespace.test.fields.create.dr._prince_gorczany_id_after')
-                                @includeIf('app.namespace.test.create.fieldset.mr-2.content_after')
+                    @includeIf('app.namespace.test.fields.create.elenor_keeling_id_after')
+                                @includeIf('app.namespace.test.create.fieldset.prof.content_after')
             </div>
 
         </fieldset>
-        @includeIf('app.namespace.test.create.fieldset.mr-2.after')
+        @includeIf('app.namespace.test.create.fieldset.prof.after')
     
     <div class="form-group">
 
