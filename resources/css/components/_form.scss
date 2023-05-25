@@ -1,50 +1,119 @@
-form {
+@layer base {
+    form {
 
+        fieldset {
+            @apply mx-0 mt-6 pb-6;
+            &:not(:last-of-type) {
+                @apply border-b border-gray-300;
+            }
 
-    /* @todo Ale fix this style because it is too generic and breaks the login page */
-    /* @apply bg-white rounded shadow inline-block w-full; */
-
-    fieldset {
-        @apply mx-4 mt-6 pb-6;
-        &:not(:last-of-type) {
-            @apply border-b border-gray-300;
-        }
-
-        @screen lg {
-            @apply mx-30 py-30 flex my-0;
-        }
-
-        legend {
-            @apply mb-4;
             @screen lg {
-                @apply float-left mr-30;
-                width: 300px;
-            }
-            @screen xl {
-                width: 507px;
-            }
-        }
-    }
-
-    .form-group {
-        @apply flex-1;
-        &:not(:last-of-type) {
-            @apply mb-5;
-        }
-
-        &.error {
-            .form-control {
-                @apply border-red-400;
+                @apply py-30 flex my-0;
             }
 
-            .error-message {
-                @apply block;
+            legend {
+                @apply mb-4;
+                @screen lg {
+                    @apply float-left mr-30;
+                    width: 300px;
+                }
+                @screen xl {
+                    width: 400px;
+                }
             }
         }
-    }
 
-    label {
-        @apply font-semibold flex flex-col text-sm;
+        .form-group {
+            &:not(:last-of-type) {
+                @apply mb-5;
+            }
+
+            &.error {
+                .form-control {
+                    @apply border-red-400;
+                }
+
+                .error-message {
+                    @apply block;
+                }
+            }
+        }
+
+        label {
+            @apply font-semibold flex flex-col text-sm;
+        }
+
+
+
+        .form-select {
+            @apply mt-2;
+        }
+
+        .custom-select {
+            @apply relative cursor-pointer;
+
+            select {
+                display: none;
+            }
+
+            .select-selected {
+                @apply relative mt-2 border border-blue-200 bg-white rounded-sm px-4 py-[10px] outline-none text-base font-normal w-full;
+
+                &.placeholder {
+                    @apply text-sm text-gray-400 py-3;
+                }
+
+                &:after {
+                    content: '';
+                    @apply absolute;
+                    top: 16px;
+                    right: 20px;
+                    border: solid currentColor;
+                    border-width: 0 0.1em 0.1em 0;
+                    display: inline-block;
+                    padding: 4px;
+                    transform: rotate(45deg);
+                }
+
+                &.select-arrow-active {
+                    @apply border-primary-400;
+                    &:after {
+                        transform: rotate(-135deg);
+                        top: 20px;
+                    }
+                }
+            }
+
+            .select-items {
+                @apply absolute left-0 right-0 bg-white shadow rounded-sm;
+                top: calc(100% + 8px);
+                z-index: 99;
+
+                > div {
+                    @apply cursor-pointer text-sm text-gray-400 px-4 py-3;
+
+                    &:hover, &.same-as-selected {
+                        @apply bg-gray-100;
+                    }
+                }
+
+                &.select-hide {
+                    @apply hidden;
+                }
+            }
+        }
+
+        .error-message {
+            @apply mt-1 text-red-400 text-sm font-normal hidden;
+        }
+
+        .form-actions {
+            @apply text-right mx-4 mt-6 pb-6;
+
+            @screen lg {
+                @apply mx-30 pb-12 my-0;
+            }
+        }
     }
 
     .form-control {
@@ -55,7 +124,7 @@ form {
         }
 
         &:focus {
-            @apply border-primary-400;
+            @apply border-primary-400 ring-primary-400;
 
             &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                 @apply text-sm text-gray-350 font-normal;
@@ -88,76 +157,6 @@ form {
 
         &:-moz-placeholder { /* Firefox 18- */
             @apply text-sm text-gray-400 font-normal;
-        }
-    }
-
-    .form-select {
-        @apply mt-2;
-    }
-
-    .custom-select {
-        @apply relative cursor-pointer;
-
-        select {
-            display: none;
-        }
-
-        .select-selected {
-            @apply relative mt-2 border border-blue-200 bg-white rounded-sm px-4 py-[10px] outline-none text-base font-normal w-full;
-
-            &.placeholder {
-                @apply text-sm text-gray-400 py-3;
-            }
-
-            &:after {
-                content: '';
-                @apply absolute;
-                top: 16px;
-                right: 20px;
-                border: solid currentColor;
-                border-width: 0 0.1em 0.1em 0;
-                display: inline-block;
-                padding: 4px;
-                transform: rotate(45deg);
-            }
-
-            &.select-arrow-active {
-                @apply border-primary-400;
-                &:after {
-                    transform: rotate(-135deg);
-                    top: 20px;
-                }
-            }
-        }
-
-        .select-items {
-            @apply absolute left-0 right-0 bg-white shadow rounded-sm;
-            top: calc(100% + 8px);
-            z-index: 99;
-
-            > div {
-                @apply cursor-pointer text-sm text-gray-400 px-4 py-3;
-
-                &:hover, &.same-as-selected {
-                    @apply bg-gray-100;
-                }
-            }
-
-            &.select-hide {
-                @apply hidden;
-            }
-        }
-    }
-
-    .error-message {
-        @apply mt-1 text-red-400 text-sm font-normal hidden;
-    }
-
-    .form-actions {
-        @apply text-right mx-4 mt-6 pb-6;
-
-        @screen lg {
-            @apply mx-30 pb-12 my-0;
         }
     }
 }

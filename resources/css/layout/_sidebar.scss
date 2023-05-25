@@ -5,7 +5,7 @@
         @apply flex flex-col flex-grow flex-1 border-r border-gray-300 py-5 bg-white max-h-full;
 
         &-logo {
-            @apply flex flex-shrink-0;
+            @apply flex flex-shrink-0 justify-between;
         }
         &-activator {
             @apply h-6 text-blue-400;
@@ -15,7 +15,7 @@
             @apply flex-1 px-5 pb-4 space-y-1 overflow-y-auto;
 
             &-item {
-                @apply text-blue-400 flex items-center px-8 py-2 text-sm w-full;
+                @apply text-blue-400 flex items-center px-2 py-2 text-sm w-full;
 
                 &:hover {
                     @apply bg-gray-100;
@@ -33,7 +33,7 @@
                 }
 
                 &-title {
-                    @apply ml-5;
+                    @apply ml-5 text-left;
                 }
             }
 
@@ -52,10 +52,10 @@
 
         .sidebar__wrapper {
             &-logo {
-                @apply pl-12 pr-6;
+                @apply pl-6 pr-6;
             }
             &-activator {
-                @apply px-6;
+                @apply pl-6 pr-0 pt-3;
             }
         }
     }

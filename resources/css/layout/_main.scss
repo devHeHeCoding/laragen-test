@@ -1,5 +1,5 @@
 .page-header {
-    @apply flex justify-between border-b border-gray-200 pb-3 mb-30;
+    @apply flex flex-wrap items-center justify-between border-b border-gray-200 pb-3 mb-30;
     @screen lg {
         @apply pb-7;
     }
@@ -43,7 +43,7 @@
     thead {
         @apply bg-gray-100;
         th {
-            @apply px-3 py-3.5 text-left text-sm font-semibold text-gray-400;
+            @apply px-3 py-3.5 text-left text-sm font-bold text-blue-400;
             &:first-of-type {
                 @apply py-3.5 pl-6 pr-3;
             }
@@ -52,7 +52,7 @@
     tbody {
         @apply divide-y divide-gray-200 bg-white;
         td {
-            @apply whitespace-nowrap px-3 py-4 text-sm text-gray-400;
+            @apply whitespace-nowrap px-3 py-4 text-sm text-gray-400 truncate max-w-prose;
             &:first-of-type {
                 @apply py-4 pl-6 pr-3;
             }

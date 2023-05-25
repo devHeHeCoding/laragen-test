@@ -1,10 +1,14 @@
-<div class="profile-menu" x-data="{ open: false }" xmlns:x-laragen="http://www.w3.org/1999/html">
+<div class="profile-menu" x-data="{ open: false }">
     <div>
         <button @click="open = !open" type="button"
                 class="profile-menu__activator"
                 :aria-expanded="open" aria-haspopup="true">
             <span class="sr-only">Open user menu</span>
-            <i class="fas fa-user fa-xl text-blue-400"></i>
+            <i class="fas fa-user  text-blue-400 border border-blue-400 p-2 rounded-full"></i>
+            <span class="hidden lg:flex lg:items-center">
+                <span class="ml-2 text-sm font-semibold leading-6 text-gray-900">{{ auth()->user()->name }}</span>
+                <i class="fa-light fa-angle-down text-blue-400 ml-2"></i>
+            </span>
         </button>
     </div>
     <div x-show="open" @click.outside="open = false" x-cloak

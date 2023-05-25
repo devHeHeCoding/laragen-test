@@ -1,5 +1,5 @@
 .table-fieldset {
-    @apply py-6 mx-7;
+    @apply py-6;
     @screen lg {
         @apply flex;
     }
@@ -18,12 +18,22 @@
 }
 .show-table {
     @apply border-x border-gray-200 text-sm;
+    thead {
+        tr {
+            th {
+                @apply p-5;
+            }
+        }
+    }
     tbody {
         tr {
             th {
                 @apply font-semibold p-5;
             }
-            &:nth-child(2n+1) {
+            td {
+                @apply p-5;
+            }
+            &:nth-child(2n+2) {
                 @apply bg-gray-100;
             }
         }

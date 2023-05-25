@@ -1,8 +1,8 @@
 .profile-menu {
-    @apply ml-3 relative;
+    @apply relative;
 
     &__activator {
-        @apply border border-blue-400 p-2 max-w-xs bg-white flex items-center rounded-full focus;
+        @apply max-w-xs bg-white flex items-center;
     }
 
     &__dropdown {
