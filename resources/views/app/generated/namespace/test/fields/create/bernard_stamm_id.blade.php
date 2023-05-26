@@ -1,3 +1,0 @@
-<x-laragen::input.group required class="px-2 w-full" label="{{ @trans('cruds.test-car138838219.fields.bernard_stamm_id') }}" for="3" :errors="$errors->get('testCar138838219.bernard_stamm_id')" >
-    <x-laragen::input.text placeholder="{{ trans('global.add') }} {{ trans('cruds.test-car138838219.fields.bernard_stamm_id')}}" name="testCar138838219.bernard_stamm_id" id="3" wire:model.defer="testCar138838219.bernard_stamm_id" />
-</x-laragen::input.group>
