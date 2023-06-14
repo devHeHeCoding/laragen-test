@@ -16,23 +16,23 @@
 
         </fieldset>
         @includeIf('app.namespace.test.create.fieldset.dr.after')
-                    @includeIf('app.namespace.test.create.fieldset.mr.before')
+                    @includeIf('app.namespace.test.create.fieldset.dr-2.before')
         <fieldset>
 
             
             <div class="flex-1 -mx-2">
-                @includeIf('app.namespace.test.create.fieldset.mr.content_before')
-                                    @includeIf('app.namespace.test.fields.create.has_many_relation_alejandra_schmidt_id_before')
+                @includeIf('app.namespace.test.create.fieldset.dr-2.content_before')
+                                    @includeIf('app.namespace.test.fields.create.has_many_relation_lyla_fritsch_d_d_s_id_before')
                     @includeFirst([
-                                'app.namespace.test.fields.create.has_many_relation_alejandra_schmidt_id',
-                                'app.generated.namespace.test.fields.create.has_many_relation_alejandra_schmidt_id'
+                                'app.namespace.test.fields.create.has_many_relation_lyla_fritsch_d_d_s_id',
+                                'app.generated.namespace.test.fields.create.has_many_relation_lyla_fritsch_d_d_s_id'
                             ])
-                    @includeIf('app.namespace.test.fields.create.has_many_relation_alejandra_schmidt_id_after')
-                                @includeIf('app.namespace.test.create.fieldset.mr.content_after')
+                    @includeIf('app.namespace.test.fields.create.has_many_relation_lyla_fritsch_d_d_s_id_after')
+                                @includeIf('app.namespace.test.create.fieldset.dr-2.content_after')
             </div>
 
         </fieldset>
-        @includeIf('app.namespace.test.create.fieldset.mr.after')
+        @includeIf('app.namespace.test.create.fieldset.dr-2.after')
     
     <div class="form-group">
 

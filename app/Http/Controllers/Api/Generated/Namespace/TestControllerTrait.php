@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers\Api\Generated\Namespace;
 
-use App\Models\TestCar1592227481;
+use App\Models\TestCar1347387071;
 use App\Http\Resources\GenericResource;
 use Illuminate\Http\Request;
 
@@ -14,7 +14,7 @@ trait TestControllerTrait
 
         public function index()
     {
-        $models = TestCar1592227481::paginate();
+        $models = TestCar1347387071::paginate();
 
         return $this->resourceToUse::collection($models);
     }
@@ -23,26 +23,26 @@ trait TestControllerTrait
         $validatedData = $request->validate([
                     ]);
 
-        $newModel = TestCar1592227481::create($validatedData);
+        $newModel = TestCar1347387071::create($validatedData);
 
         return (new $this->resourceToUse($newModel))->response()->setStatusCode(201);
     }
-            public function update(Request $request, TestCar1592227481 $testCar1592227481)
+            public function update(Request $request, TestCar1347387071 $testCar1347387071)
     {
         $validatedData = $request->validate([
                     ]);
 
-        $testCar1592227481->update($validatedData);
+        $testCar1347387071->update($validatedData);
 
-        return new $this->resourceToUse($testCar1592227481);
+        return new $this->resourceToUse($testCar1347387071);
     }
-            public function show(TestCar1592227481 $testCar1592227481)
+            public function show(TestCar1347387071 $testCar1347387071)
     {
-        return new $this->resourceToUse($testCar1592227481);
+        return new $this->resourceToUse($testCar1347387071);
     }
-            public function destroy(TestCar1592227481 $testCar1592227481)
+            public function destroy(TestCar1347387071 $testCar1347387071)
     {
-        $testCar1592227481->delete();
+        $testCar1347387071->delete();
         return response()->noContent();
     }
   }
