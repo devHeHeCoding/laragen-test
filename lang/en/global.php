@@ -7,5 +7,6 @@ return [
     'delete' => 'Delete',
     'show' => 'Show',
     'create' => 'Create',
+    'add' => 'Add',
     'actions' => 'Actions',
 ];
