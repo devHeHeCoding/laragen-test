@@ -9,4 +9,5 @@ return [
     'create' => 'Create',
     'add' => 'Add',
     'actions' => 'Actions',
+    'choose' => 'Choose'
 ];
