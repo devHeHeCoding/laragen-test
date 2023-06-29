@@ -1,18 +1,18 @@
 <?php
 return [
-    'test-car1255711560' => [
-        'title_singular' => 'Test Car1255711560',
-        'title_multiple' => 'Test Car1255711560S',
+    'test-car876504453' => [
+        'title_singular' => 'Test Car876504453',
+        'title_multiple' => 'Test Car876504453S',
         'fields' => [
                     'test' => 'Test',
                 'test_helper' => '',
-                    'has_many_relation' => 'Test Car2707193122S',
+                    'has_many_relation' => 'Test Car2441958959S',
                 'has_many_relation_helper' => '',
                     ],
     ],
-    'test-car2707193122' => [
-        'title_singular' => 'Test Car2707193122',
-        'title_multiple' => 'Test Car2707193122S',
+    'test-car2441958959' => [
+        'title_singular' => 'Test Car2441958959',
+        'title_multiple' => 'Test Car2441958959S',
         'fields' => [
                     ],
     ],
@@ -21,12 +21,12 @@ return [
                 'title' => 'Default fieldset',
                 'description' => '',
             ],
-                    'prof' => [
-                'title' => 'Prof.',
+                    'dr' => [
+                'title' => 'Dr.',
                 'description' => 'description',
             ],
-                    'prof-2' => [
-                'title' => 'Prof.',
+                    'mr' => [
+                'title' => 'Mr.',
                 'description' => 'description',
             ],
             ],
