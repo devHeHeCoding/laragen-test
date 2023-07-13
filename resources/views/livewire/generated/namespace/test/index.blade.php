@@ -3,24 +3,25 @@
         Loading...
     </div>
     @includeIf('app.namespace.test.index.before_content')
+
     <div class="-my-2 -mx-6 overflow-x-auto lg:-mx-7">
         <div class="inline-block min-w-full py-2 align-middle px-6 lg:px-8">
             <div class="overflow-hidden shadow rounded">
                 <table class="laragen-table">
                     <thead>
                     <tr>
-                                                    @includeIf('app.namespace.test.index.test_before_header')
+                                                                                @includeIf('app.namespace.test.index.test_before_header')
                             <th>
-                                {{ trans('cruds.test-car1043043922.fields.test') }}                            </th>
+                                {{ trans('cruds.test-car1804533024.fields.test') }}                            </th>
                             @includeIf('app.namespace.test.index.test_after_header')
-                                                <th style="width: 120px">{{ trans('global.actions') }}</th>
+                                                                                                            <th style="width: 120px">{{ trans('global.actions') }}</th>
                     </tr>
                     </thead>
                     <tbody>
                     @forelse($items as $item)
                         @includeIf('app.namespace.test.index.before_row', ['item' => $item])
                         <tr>
-                                                            @includeIf('app.namespace.test.fields.index.test_before_column')
+                                                                                            @includeIf('app.namespace.test.fields.index.test_before_column')
                                 <td>
                                     @includeFirst(
                                         [
@@ -31,21 +32,21 @@
                                     @includeIf('app.namespace.test.fields.index.test_after')
                                 </td>
                                 @includeIf('app.namespace.test.fields.index.test_after_column')
-                                                        <td>
+                                                                                                                            <td>
                                 <div class="form-group">
                                     
                                     @if(!$hideDefaultActions)
 
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar1043043922' => $item->id]) }}"></x-laragen::button>
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar1804533024' => $item->id]) }}"></x-laragen::button>
                                     
                                     
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar1043043922' => $item->id]) }}"></x-laragen::button>                                    
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar1804533024' => $item->id]) }}"></x-laragen::button>                                    
                                                                                 <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="confirm('delete', {{ $item->id }})"></x-laragen::button>                                    
                                     @endif
-                                    @includeIf('app.namespace.test.index.actions')
+                                    @includeIf('app.namespace.test}.index.actions')
                                 </div>
                             </td>
                         </tr>

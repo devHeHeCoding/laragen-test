@@ -2,9 +2,9 @@
 
         
         <table class="w-full show-table">
-                                            <tr>
+                                                            <tr>
                     <th class="text-left">
-                        {{ trans('cruds.test-car1043043922.fields.test') }}                    </th>
+                        {{ trans('cruds.test-car1804533024.fields.test') }}                    </th>
                     <td>
 
                         @includeFirst(
@@ -16,7 +16,7 @@
                     </td>
                 </tr>
                 @includeIf('app.namespace.test.fields.show.test_after')
-                    </table>
+                                                        </table>
     </div>
                         
 @includeIf('app.namespace.test.show.footer')

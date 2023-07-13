@@ -1,7 +1,7 @@
 <?php
-namespace App\Http\Livewire\Generated\Namespace\Test;
+    namespace App\Http\Livewire\Generated\Namespace\Test;
 
-use App\Models\TestCar1043043922;
+use App\Models\TestCar1804533024;
 use Illuminate\Http\RedirectResponse;
 use Livewire\Redirector;
 
@@ -15,32 +15,31 @@ trait IndexTrait
             use \Hehecoding\LaragenUiKit\Traits\WithConfirmation;
         public int $perPage = 10;
 
-    public bool $hideDefaultActions = false;
-
-    public function render()
+            public bool $hideDefaultActions = false;
+        public function render()
     {
-        return view('livewire.generated.namespace.test.index', [
-            'items' => $this->getQuery()
-        ]);
-    }
+                    return view('livewire.generated.namespace.test.index', [
+                'items' => $this->getQuery()
+            ]);
+            }
 
     protected function getQuery(): \Illuminate\Contracts\Pagination\LengthAwarePaginator
     {
-        return TestCar1043043922::paginate($this->perPage);
+        return TestCar1804533024::paginate($this->perPage);
     }
 
-            public function delete(TestCar1043043922 $testCar1043043922): null|Redirector|RedirectResponse
+            public function delete(TestCar1804533024 $testCar1804533024): null|Redirector|RedirectResponse
         {
-                                                if ($testCar1043043922->hasManyRelation()->count() > 0) {
+                                                if ($testCar1804533024->hasManyRelation()->count() > 0) {
                         $this->emit('deleteNotAllowed',
-                            'TestCar1043043922 cannot be deleted.
-                            Has testCar2862927557s: ('. $testCar1043043922->testCar2862927557s()->count() .')'
+                            'TestCar1804533024 cannot be deleted.
+                            Has testCar21959497135s: ('. $testCar1804533024->testCar21959497135s()->count() .')'
                         );
 
                         return null;
                     }
                             
-            $testCar1043043922->delete();
+            $testCar1804533024->delete();
 
         $items = $this->getQuery();
 
