@@ -12,7 +12,7 @@
                     <tr>
                                                                                 @includeIf('app.namespace.test.index.test_before_header')
                             <th>
-                                {{ trans('cruds.test-car1345008813.fields.test') }}                            </th>
+                                {{ trans('cruds.test-car483996585.fields.test') }}                            </th>
                             @includeIf('app.namespace.test.index.test_after_header')
                                                                                                             <th style="width: 120px">{{ trans('global.actions') }}</th>
                     </tr>
@@ -38,15 +38,25 @@
                                     @if(!$hideDefaultActions)
 
                                     
+                                        @if(!$hideShowAction)
+
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar1345008813' => $item->id]) }}"></x-laragen::button>
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar483996585' => $item->id]) }}"></x-laragen::button>
+                                        @endif
+
                                     
                                     
+                                        @if(!$hideEditAction)
+
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar1345008813' => $item->id]) }}"></x-laragen::button>                                    
-                                                                                <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="confirm('delete', {{ $item->id }})"></x-laragen::button>                                    
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar483996585' => $item->id]) }}"></x-laragen::button>
+                                        @endif
+                                    
+                                                                            @if(!$hideDeleteAction)
+                                            <x-laragen::button variant="text" size="xs" icon="fa-light fa-trash" color="error" wire:click="confirm('delete', {{ $item->id }})"></x-laragen::button>                                        @endif
+                                    
                                     @endif
-                                    @includeIf('app.namespace.test}.index.actions')
+                                    @includeIf('app.namespace.test.index.actions')
                                 </div>
                             </td>
                         </tr>
