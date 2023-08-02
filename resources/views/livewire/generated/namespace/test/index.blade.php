@@ -12,7 +12,7 @@
                     <tr>
                                                                                 @includeIf('app.namespace.test.index.test_before_header')
                             <th>
-                                {{ trans('cruds.test-car958059729.fields.test') }}                            </th>
+                                {{ trans('cruds.test-car708960866.fields.test') }}                            </th>
                             @includeIf('app.namespace.test.index.test_after_header')
                                                                                                             <th style="width: 120px">{{ trans('global.actions') }}</th>
                     </tr>
@@ -41,7 +41,7 @@
                                         @if(!$hideShowAction)
 
                                         
-                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar958059729' => $item->id]) }}"></x-laragen::button>
+                                        <x-laragen::button variant="text" size="xs" icon="fa-light fa-eye" href="{{ route('laragen.admin.route.prefix.show', ['testCar708960866' => $item->id]) }}"></x-laragen::button>
                                         @endif
 
                                     
@@ -49,7 +49,7 @@
                                         @if(!$hideEditAction)
 
                                                                                      
-                                            <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar958059729' => $item->id]) }}"></x-laragen::button>                                        
+                                            <x-laragen::button variant="text" size="xs" icon="fa-light fa-pencil" href="{{ route('laragen.admin.route.prefix.edit', ['testCar708960866' => $item->id]) }}"></x-laragen::button>                                        
                                         @endif
                                     
                                                                             @if(!$hideDeleteAction)
