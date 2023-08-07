@@ -1,38 +1,38 @@
 <x-laragen::form wire:submit.prevent="submit" class="pb-7 bg-white shadow rounded px-7">
-                                        @includeIf('app.namespace.test.create.fieldset.prof.before')
+                                        @includeIf('app.namespace.test.create.fieldset.dr.before')
         <fieldset>
 
             
             <div class="flex-1 -mx-2">
-                @includeIf('app.namespace.test.create.fieldset.prof.content_before')
+                @includeIf('app.namespace.test.create.fieldset.dr.content_before')
                                                         @includeIf('app.namespace.test.fields.create.test_before')
                     @includeFirst([
                                 'app.namespace.test.fields.create.test',
                                 'app.generated.namespace.test.fields.create.test'
                             ])
                     @includeIf('app.namespace.test.fields.create.test_after')
-                                @includeIf('app.namespace.test.create.fieldset.prof.content_after')
+                                @includeIf('app.namespace.test.create.fieldset.dr.content_after')
             </div>
 
         </fieldset>
-        @includeIf('app.namespace.test.create.fieldset.prof.after')
-                    @includeIf('app.namespace.test.create.fieldset.prof-2.before')
+        @includeIf('app.namespace.test.create.fieldset.dr.after')
+                    @includeIf('app.namespace.test.create.fieldset.mr.before')
         <fieldset>
 
             
             <div class="flex-1 -mx-2">
-                @includeIf('app.namespace.test.create.fieldset.prof-2.content_before')
-                                                        @includeIf('app.namespace.test.fields.create.has_many_relation_colton_beier_ph_d_id_before')
+                @includeIf('app.namespace.test.create.fieldset.mr.content_before')
+                                                        @includeIf('app.namespace.test.fields.create.has_many_relation_pearl_tremblay_id_before')
                     @includeFirst([
-                                'app.namespace.test.fields.create.has_many_relation_colton_beier_ph_d_id',
-                                'app.generated.namespace.test.fields.create.has_many_relation_colton_beier_ph_d_id'
+                                'app.namespace.test.fields.create.has_many_relation_pearl_tremblay_id',
+                                'app.generated.namespace.test.fields.create.has_many_relation_pearl_tremblay_id'
                             ])
-                    @includeIf('app.namespace.test.fields.create.has_many_relation_colton_beier_ph_d_id_after')
-                                @includeIf('app.namespace.test.create.fieldset.prof-2.content_after')
+                    @includeIf('app.namespace.test.fields.create.has_many_relation_pearl_tremblay_id_after')
+                                @includeIf('app.namespace.test.create.fieldset.mr.content_after')
             </div>
 
         </fieldset>
-        @includeIf('app.namespace.test.create.fieldset.prof-2.after')
+        @includeIf('app.namespace.test.create.fieldset.mr.after')
     
     <div class="form-group">
 
